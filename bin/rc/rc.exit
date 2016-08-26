@@ -16,28 +16,6 @@ esac
 # Set linefeed mode to avoid staircase effect
 echo; /bin/stty onlcr
 
-HWCLOCK_PARAMS="-w"
-case $HARDWARECLOCK in
-	"")
-		;;
-	UTC)
-		HWCLOCK_PARAMS="-u $HWCLOCK_PARAMS"
-		;;
-	localtime)
-		HWCLOCK_PARAMS="-l $HWCLOCK_PARAMS"
-		;;
-	*)
-		HWCLOCK_PARAMS=""
-		;;
-esac
-
-if test -n "$HWCLOCK_PARAMS"
-then
-	test -n "$TIMEZONE" && export TZ="$TIMEZONE"
-	/bin/hwclock $HWCLOCK_PARAMS /dev/rtc0
-	unset TZ
-fi
-
 /bin/dd if=/dev/urandom of=/etc/random-seed count=1 bs=512 2>/dev/null
 
 /bin/killall5 -s TERM
