@@ -85,7 +85,7 @@ OBJS= $(DEBUGFS_LIB_OBJS) $(RESIZE_LIB_OBJS) $(E2IMAGE_LIB_OBJS) \
 	valid_blk.o \
 	version.o \
 	rbtree.o
-CLEAN_FILES = ext2_err.et ext2_types.h crc32c_table.h ext2_err.c ext2_err.h
+CLEAN_FILES = ext2_err.et ext2_types.h ext2_err.c ext2_err.h
 CFLAGS = -I. -I../ -I../../intl -DHAVE_CONFIG_H
 CPPFLAGS =
 
@@ -101,6 +101,3 @@ ext2_types.h: ext2_types.h.in
 
 ext2_err.c ext2_err.h: ext2_err.et
 	@DIR=../et ../et/compile_et ext2_err.et
-
-crc32c_table.h: gen_crc32ctable
-	@./gen_crc32ctable > crc32c_table.h

@@ -3,17 +3,16 @@ VERSION = 0.0
 
 # define target and target rootfs
 HOST_ARCH=x86_64-linux-musl
-TARGET_ARCH=arm-linux-musleabi
-#TARGET_ARCH=$(HOST_ARCH)
-#TARGET_LONG=8
-TARGET_LONG=4
-SYS=sys.pi
-#SYS=sys.x86_64
-DESTDIR=$(HOME)/rootfs-pi
-#DESTDIR=$(HOME)/rootfs-x86_64
+#TARGET_ARCH=arm-linux-musleabi
+TARGET_ARCH=$(HOST_ARCH)
+TARGET_LONG=8
+#TARGET_LONG=4
+#SYS=sys.pi
+SYS=sys.x86_64
+#DESTDIR=$(HOME)/rootfs-pi
+DESTDIR=$(HOME)/rootfs-x86_64
 PREFIX = /
 MANPREFIX = $(PREFIX)/share/man
-
 
 M4 = m4
 HOSTCC = $(ROOT)/../toolchain/bin/$(HOST_ARCH)-gcc
