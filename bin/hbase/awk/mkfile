@@ -1,0 +1,27 @@
+BIN = awk
+OBJ = ytab.o lex.o b.o main.o parse.o proctab.o tran.o lib.o run.o
+INSTALL_BIN = awk
+INSTALL_MAN1 = awk.1
+LOCAL_LDFLAGS = -lm
+CLEAN_FILES = ytab.c ytab.h proctab.c gen/maketab
+DEPS = yacc
+
+<$mkbuild/mk.default
+
+ytab:VQ: awkgram.y
+	echo YACC -d $prereq
+	$YACC -d $prereq
+	mv y.tab.c ytab.c
+	mv y.tab.h ytab.h
+
+ytab.c: ytab
+	
+ytab.h: ytab
+	
+proctab.c:VQ: gen/maketab
+	echo MAKETAB proctab.c
+	gen/maketab ytab.h >proctab.c
+
+gen/maketab:VQ: ytab.h gen/maketab.c
+	echo HOSTCC $target
+	$HOSTCC gen/maketab.c -o $target

@@ -1,0 +1,24 @@
+BIN = lex
+LIB = libl.a
+OBJ = main.o sub1.o sub2.o sub3.o header.o wcio.o parser.o getopt.o lsearch.o
+LOBJ = allprint.o libmain.o reject.o yyless.o yywrap.o \
+	allprint_w.o reject_w.o yyless_w.o reject_e.o yyless_e.o
+DEPS = yacc
+
+<$mkbuild/mk.default
+
+LOCAL_CFLAGS = -DFORMPATH=\"$LIBDIR/lex\"
+CLEAN_FILES = parser.c
+INSTALL_BIN = lex
+INSTALL_MAN1 = lex.1
+
+WFLAGS = -DEUC -DJLSLEX -DWOPTION
+EFLAGS = -DEUC -DJLSLEX -DEOPTION
+
+%_w.o:Q: %.c
+	echo CC $target
+	$CC -c $CFLAGS $CPPFLAGS $WFLAGS $prereq -o $target
+
+%_e.o:Q: %.c
+	echo CC $target
+	$CC -c $CFLAGS $CPPFLAGS $EFLAGS $prereq -o $target

@@ -1,0 +1,8 @@
+BIN = dc
+OBJ = dc.o
+LOCAL_CFLAGS = -DSHELL=\"$SHELL\"
+INSTALL_BIN = dc
+INSTALL_MAN1 = dc.1
+DEPS = libcommon
+
+<$mkbuild/mk.default

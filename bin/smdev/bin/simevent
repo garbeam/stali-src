@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# Simulate add/remove events by writing directly
+# into the uevent files.
+
+if [ "$#" -ne 1 ] || [ "$1" != add ] && [ "$1" != remove ]; then
+	echo "usage: simevent add|remove" 1>&2
+	exit 1
+fi
+
+find /sys/devices -type f -path '*/dev' -exec \
+	sh -c 'for f do printf %s\\n "$0" > "${f%/*}"/uevent; done' "$1" {} +

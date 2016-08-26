@@ -1,0 +1,22 @@
+
+utmp is a small program which update the utmp record of the current tty.
+It is designed for helping in some terminal emulators or session manager
+which lack support for it.
+
+Compile:
+-------
+
+There  are  three  different interfaces to utmp: SystemV, BSD and POSIX.
+SystemV and POSIX are basically the same  interfaces (POSIX  has  better
+definitons for utmp fields, like for example ut_pid which in some system
+was a short instead of a pid_t), but BSD is very different. utmp has im‐
+plemented  the  three interfaces  and it supplies three different config
+files, so the user only has to rename the proper one to config.mk. It is
+also  added a basic configure, which selects the POSIX interface for all
+platforms except for OpenBSD.
+
+
+ $ ./configure
+ $ make
+ # make install
+

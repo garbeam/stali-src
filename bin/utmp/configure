@@ -1,0 +1,10 @@
+#!/bin/sh
+
+case `uname` in
+OpenBSD)
+	ln config.bsd config.mk
+	;;
+*)
+	ln config.posix config.mk
+	;;
+esac

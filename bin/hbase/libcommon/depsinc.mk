@@ -1,0 +1,2 @@
+DEPS_CFLAGS = $DEPS_CFLAGS -I$libcommon_DEPDIR
+DEPS_LDFLAGS = $DEPS_LDFLAGS -L$libcommon_DEPDIR -lcommon

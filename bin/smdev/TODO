@@ -1,0 +1,6 @@
+* remove memory allocations in the create/remove path
+* grab latest recurse.c from sbase and rework code (remove agetcwd calls)
+* use strlcpy()/strlcat() instead of snprintf() and check for path truncation
+* populatedev() makes some weird assumptions, should be reworked
+* simplify parsepath()
+* rethink mdev compatibility

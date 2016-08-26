@@ -1,0 +1,7 @@
+# Generated config based on /home/anselm/src/bin/iproute2/include
+PKG_CONFIG:=pkg-config
+AR:=ar
+CC:=gcc
+TC_CONFIG_IPSET:=y
+IPT_LIB_DIR:=/lib/xtables
+IP_CONFIG_SETNS:=y

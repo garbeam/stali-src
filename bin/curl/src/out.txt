@@ -1,0 +1,848 @@
+tool_xattr.o: In function `fwrite_xattr':
+tool_xattr.c:(.text+0x90): multiple definition of `fwrite_xattr'
+tool_xattr.o:tool_xattr.c:(.text+0x90): first defined here
+tool_helpers.o: In function `param2text':
+tool_helpers.c:(.text+0x90): multiple definition of `param2text'
+tool_helpers.o:tool_helpers.c:(.text+0x90): first defined here
+tool_helpers.o: In function `SetHTTPrequest':
+tool_helpers.c:(.text+0xfd): multiple definition of `SetHTTPrequest'
+tool_helpers.o:tool_helpers.c:(.text+0xfd): first defined here
+tool_helpers.o: In function `customrequest_helper':
+tool_helpers.c:(.text+0x196): multiple definition of `customrequest_helper'
+tool_helpers.o:tool_helpers.c:(.text+0x196): first defined here
+tool_operate.o: In function `operate':
+tool_operate.c:(.text+0x565b): multiple definition of `operate'
+tool_operate.o:tool_operate.c:(.text+0x565b): first defined here
+tool_dirhie.o: In function `create_dir_hierarchy':
+tool_dirhie.c:(.text+0x17b): multiple definition of `create_dir_hierarchy'
+tool_dirhie.o:tool_dirhie.c:(.text+0x17b): first defined here
+tool_easysrc.o:(.bss+0x0): multiple definition of `easysrc_decl'
+tool_easysrc.o:(.bss+0x0): first defined here
+tool_easysrc.o:(.bss+0x8): multiple definition of `easysrc_data'
+tool_easysrc.o:(.bss+0x8): first defined here
+tool_easysrc.o:(.bss+0x10): multiple definition of `easysrc_code'
+tool_easysrc.o:(.bss+0x10): first defined here
+tool_easysrc.o:(.bss+0x18): multiple definition of `easysrc_toohard'
+tool_easysrc.o:(.bss+0x18): first defined here
+tool_easysrc.o:(.bss+0x20): multiple definition of `easysrc_clean'
+tool_easysrc.o:(.bss+0x20): first defined here
+tool_easysrc.o:(.bss+0x28): multiple definition of `easysrc_form_count'
+tool_easysrc.o:(.bss+0x28): first defined here
+tool_easysrc.o:(.bss+0x2c): multiple definition of `easysrc_slist_count'
+tool_easysrc.o:(.bss+0x2c): first defined here
+tool_easysrc.o: In function `easysrc_add':
+tool_easysrc.c:(.text+0x118): multiple definition of `easysrc_add'
+tool_easysrc.o:tool_easysrc.c:(.text+0x118): first defined here
+tool_easysrc.o: In function `easysrc_addf':
+tool_easysrc.c:(.text+0x16e): multiple definition of `easysrc_addf'
+tool_easysrc.o:tool_easysrc.c:(.text+0x16e): first defined here
+tool_easysrc.o: In function `easysrc_init':
+tool_easysrc.c:(.text+0x260): multiple definition of `easysrc_init'
+tool_easysrc.o:tool_easysrc.c:(.text+0x260): first defined here
+tool_easysrc.o: In function `easysrc_perform':
+tool_easysrc.c:(.text+0x28c): multiple definition of `easysrc_perform'
+tool_easysrc.o:tool_easysrc.c:(.text+0x28c): first defined here
+tool_easysrc.o: In function `easysrc_cleanup':
+tool_easysrc.c:(.text+0x414): multiple definition of `easysrc_cleanup'
+tool_easysrc.o:tool_easysrc.c:(.text+0x414): first defined here
+tool_easysrc.o: In function `dumpeasysrc':
+tool_easysrc.c:(.text+0x45d): multiple definition of `dumpeasysrc'
+tool_easysrc.o:tool_easysrc.c:(.text+0x45d): first defined here
+tool_homedir.o: In function `homedir':
+tool_homedir.c:(.text+0xe0): multiple definition of `homedir'
+tool_homedir.o:tool_homedir.c:(.text+0xe0): first defined here
+tool_formparse.o: In function `formparse':
+tool_formparse.c:(.text+0x28e): multiple definition of `formparse'
+tool_formparse.o:tool_formparse.c:(.text+0x28e): first defined here
+tool_cb_wrt.o: In function `tool_create_output_file':
+tool_cb_wrt.c:(.text+0x90): multiple definition of `tool_create_output_file'
+tool_cb_wrt.o:tool_cb_wrt.c:(.text+0x90): first defined here
+tool_cb_wrt.o: In function `tool_write_cb':
+tool_cb_wrt.c:(.text+0x1e3): multiple definition of `tool_write_cb'
+tool_cb_wrt.o:tool_cb_wrt.c:(.text+0x1e3): first defined here
+tool_cb_prg.o: In function `tool_progress_cb':
+tool_cb_prg.c:(.text+0x90): multiple definition of `tool_progress_cb'
+tool_cb_prg.o:tool_cb_prg.c:(.text+0x90): first defined here
+tool_cb_prg.o: In function `progressbarinit':
+tool_cb_prg.c:(.text+0x334): multiple definition of `progressbarinit'
+tool_cb_prg.o:tool_cb_prg.c:(.text+0x334): first defined here
+tool_util.o: In function `tool_tvnow':
+tool_util.c:(.text+0x90): multiple definition of `tool_tvnow'
+tool_util.o:tool_util.c:(.text+0x90): first defined here
+tool_util.o: In function `tool_tvdiff':
+tool_util.c:(.text+0xfb): multiple definition of `tool_tvdiff'
+tool_util.o:tool_util.c:(.text+0xfb): first defined here
+tool_util.o: In function `tool_tvdiff_secs':
+tool_util.c:(.text+0x167): multiple definition of `tool_tvdiff_secs'
+tool_util.o:tool_util.c:(.text+0x167): first defined here
+tool_util.o: In function `tool_tvlong':
+tool_util.c:(.text+0x1fc): multiple definition of `tool_tvlong'
+tool_util.o:tool_util.c:(.text+0x1fc): first defined here
+tool_mfiles.o: In function `AddMultiFiles':
+tool_mfiles.c:(.text+0xd5): multiple definition of `AddMultiFiles'
+tool_mfiles.o:tool_mfiles.c:(.text+0xd5): first defined here
+tool_mfiles.o: In function `FreeMultiInfo':
+tool_mfiles.c:(.text+0x238): multiple definition of `FreeMultiInfo'
+tool_mfiles.o:tool_mfiles.c:(.text+0x238): first defined here
+tool_setopt.o:(.rodata+0x80): multiple definition of `setopt_nv_CURLPROXY'
+tool_setopt.o:(.rodata+0x80): first defined here
+tool_setopt.o:(.rodata+0x1c0): multiple definition of `setopt_nv_CURLAUTH'
+tool_setopt.o:(.rodata+0x1c0): first defined here
+tool_setopt.o:(.rodata+0x300): multiple definition of `setopt_nv_CURL_HTTP_VERSION'
+tool_setopt.o:(.rodata+0x300): first defined here
+tool_setopt.o:(.rodata+0x440): multiple definition of `setopt_nv_CURL_SSLVERSION'
+tool_setopt.o:(.rodata+0x440): first defined here
+tool_setopt.o:(.rodata+0x540): multiple definition of `setopt_nv_CURL_TIMECOND'
+tool_setopt.o:(.rodata+0x540): first defined here
+tool_setopt.o:(.rodata+0x600): multiple definition of `setopt_nv_CURLFTPSSL_CCC'
+tool_setopt.o:(.rodata+0x600): first defined here
+tool_setopt.o:(.rodata+0x6c0): multiple definition of `setopt_nv_CURLUSESSL'
+tool_setopt.o:(.rodata+0x6c0): first defined here
+tool_setopt.o:(.rodata+0x740): multiple definition of `setopt_nv_CURLSSLOPT'
+tool_setopt.o:(.rodata+0x740): first defined here
+tool_setopt.o:(.rodata+0x7c0): multiple definition of `setopt_nv_CURL_NETRC'
+tool_setopt.o:(.rodata+0x7c0): first defined here
+tool_setopt.o:(.rodata+0x980): multiple definition of `setopt_nv_CURLPROTO'
+tool_setopt.o:(.rodata+0x980): first defined here
+tool_setopt.o: In function `tool_setopt_enum':
+tool_setopt.c:(.text+0x1e6): multiple definition of `tool_setopt_enum'
+tool_setopt.o:tool_setopt.c:(.text+0x1e6): first defined here
+tool_setopt.o: In function `tool_setopt_flags':
+tool_setopt.c:(.text+0x308): multiple definition of `tool_setopt_flags'
+tool_setopt.o:tool_setopt.c:(.text+0x308): first defined here
+tool_setopt.o: In function `tool_setopt_bitmask':
+tool_setopt.c:(.text+0x4e6): multiple definition of `tool_setopt_bitmask'
+tool_setopt.o:tool_setopt.c:(.text+0x4e6): first defined here
+tool_setopt.o: In function `tool_setopt_httppost':
+tool_setopt.c:(.text+0x6c4): multiple definition of `tool_setopt_httppost'
+tool_setopt.o:tool_setopt.c:(.text+0x6c4): first defined here
+tool_setopt.o: In function `tool_setopt_slist':
+tool_setopt.c:(.text+0xaeb): multiple definition of `tool_setopt_slist'
+tool_setopt.o:tool_setopt.c:(.text+0xaeb): first defined here
+tool_setopt.o: In function `tool_setopt':
+tool_setopt.c:(.text+0xcec): multiple definition of `tool_setopt'
+tool_setopt.o:tool_setopt.c:(.text+0xcec): first defined here
+tool_help.o: In function `tool_help':
+tool_help.c:(.text+0x90): multiple definition of `tool_help'
+tool_help.o:tool_help.c:(.text+0x90): first defined here
+tool_help.o: In function `tool_version_info':
+tool_help.c:(.text+0xce): multiple definition of `tool_version_info'
+tool_help.o:tool_help.c:(.text+0xce): first defined here
+tool_help.o: In function `tool_list_engines':
+tool_help.c:(.text+0x1cf): multiple definition of `tool_list_engines'
+tool_help.o:tool_help.c:(.text+0x1cf): first defined here
+tool_getpass.o: In function `getpass_r':
+tool_getpass.c:(.text+0x171): multiple definition of `getpass_r'
+tool_getpass.o:tool_getpass.c:(.text+0x171): first defined here
+tool_msgs.o: In function `notef':
+tool_msgs.c:(.text+0x241): multiple definition of `notef'
+tool_msgs.o:tool_msgs.c:(.text+0x241): first defined here
+tool_msgs.o: In function `warnf':
+tool_msgs.c:(.text+0x2f9): multiple definition of `warnf'
+tool_msgs.o:tool_msgs.c:(.text+0x2f9): first defined here
+tool_msgs.o: In function `helpf':
+tool_msgs.c:(.text+0x3a3): multiple definition of `helpf'
+tool_msgs.o:tool_msgs.c:(.text+0x3a3): first defined here
+tool_parsecfg.o: In function `parseconfig':
+tool_parsecfg.c:(.text+0xb6): multiple definition of `parseconfig'
+tool_parsecfg.o:tool_parsecfg.c:(.text+0xb6): first defined here
+tool_cb_see.o: In function `tool_seek_cb':
+tool_cb_see.c:(.text+0x90): multiple definition of `tool_seek_cb'
+tool_cb_see.o:tool_cb_see.c:(.text+0x90): first defined here
+tool_main.o: In function `main':
+tool_main.c:(.text+0x39b): multiple definition of `main'
+tool_main.o:tool_main.c:(.text+0x39b): first defined here
+tool_writeout.o: In function `ourWriteOut':
+tool_writeout.c:(.text+0x90): multiple definition of `ourWriteOut'
+tool_writeout.o:tool_writeout.c:(.text+0x90): first defined here
+tool_urlglob.o: In function `glob_url':
+tool_urlglob.c:(.text+0xedd): multiple definition of `glob_url'
+tool_urlglob.o:tool_urlglob.c:(.text+0xedd): first defined here
+tool_urlglob.o: In function `glob_cleanup':
+tool_urlglob.c:(.text+0x10c3): multiple definition of `glob_cleanup'
+tool_urlglob.o:tool_urlglob.c:(.text+0x10c3): first defined here
+tool_urlglob.o: In function `glob_next_url':
+tool_urlglob.c:(.text+0x124b): multiple definition of `glob_next_url'
+tool_urlglob.o:tool_urlglob.c:(.text+0x124b): first defined here
+tool_urlglob.o: In function `glob_match_url':
+tool_urlglob.c:(.text+0x15cb): multiple definition of `glob_match_url'
+tool_urlglob.o:tool_urlglob.c:(.text+0x15cb): first defined here
+slist_wc.o: In function `slist_wc_append':
+slist_wc.c:(.text+0x90): multiple definition of `slist_wc_append'
+slist_wc.o:slist_wc.c:(.text+0x90): first defined here
+slist_wc.o: In function `slist_wc_free_all':
+slist_wc.c:(.text+0x139): multiple definition of `slist_wc_free_all'
+slist_wc.o:slist_wc.c:(.text+0x139): first defined here
+tool_operhlp.o: In function `clean_getout':
+tool_operhlp.c:(.text+0x90): multiple definition of `clean_getout'
+tool_operhlp.o:tool_operhlp.c:(.text+0x90): first defined here
+tool_operhlp.o: In function `output_expected':
+tool_operhlp.c:(.text+0x144): multiple definition of `output_expected'
+tool_operhlp.o:tool_operhlp.c:(.text+0x144): first defined here
+tool_operhlp.o: In function `stdin_upload':
+tool_operhlp.c:(.text+0x1a4): multiple definition of `stdin_upload'
+tool_operhlp.o:tool_operhlp.c:(.text+0x1a4): first defined here
+tool_operhlp.o: In function `add_file_name_to_url':
+tool_operhlp.c:(.text+0x1eb): multiple definition of `add_file_name_to_url'
+tool_operhlp.o:tool_operhlp.c:(.text+0x1eb): first defined here
+tool_operhlp.o: In function `get_url_file_name':
+tool_operhlp.c:(.text+0x376): multiple definition of `get_url_file_name'
+tool_operhlp.o:tool_operhlp.c:(.text+0x376): first defined here
+tool_paramhlp.o: In function `new_getout':
+tool_paramhlp.c:(.text+0x90): multiple definition of `new_getout'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0x90): first defined here
+tool_paramhlp.o: In function `file2string':
+tool_paramhlp.c:(.text+0x10e): multiple definition of `file2string'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0x10e): first defined here
+tool_paramhlp.o: In function `file2memory':
+tool_paramhlp.c:(.text+0x253): multiple definition of `file2memory'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0x253): first defined here
+tool_paramhlp.o: In function `cleanarg':
+tool_paramhlp.c:(.text+0x3e6): multiple definition of `cleanarg'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0x3e6): first defined here
+tool_paramhlp.o: In function `str2num':
+tool_paramhlp.c:(.text+0x420): multiple definition of `str2num'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0x420): first defined here
+tool_paramhlp.o: In function `str2unum':
+tool_paramhlp.c:(.text+0x495): multiple definition of `str2unum'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0x495): first defined here
+tool_paramhlp.o: In function `str2double':
+tool_paramhlp.c:(.text+0x4e0): multiple definition of `str2double'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0x4e0): first defined here
+tool_paramhlp.o: In function `str2udouble':
+tool_paramhlp.c:(.text+0x555): multiple definition of `str2udouble'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0x555): first defined here
+tool_paramhlp.o: In function `proto2num':
+tool_paramhlp.c:(.text+0x5a6): multiple definition of `proto2num'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0x5a6): first defined here
+tool_paramhlp.o: In function `check_protocol':
+tool_paramhlp.c:(.text+0x79b): multiple definition of `check_protocol'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0x79b): first defined here
+tool_paramhlp.o: In function `str2offset':
+tool_paramhlp.c:(.text+0x80a): multiple definition of `str2offset'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0x80a): first defined here
+tool_paramhlp.o: In function `add2list':
+tool_paramhlp.c:(.text+0xaf5): multiple definition of `add2list'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0xaf5): first defined here
+tool_paramhlp.o: In function `ftpfilemethod':
+tool_paramhlp.c:(.text+0xb3f): multiple definition of `ftpfilemethod'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0xb3f): first defined here
+tool_paramhlp.o: In function `ftpcccmethod':
+tool_paramhlp.c:(.text+0xbcb): multiple definition of `ftpcccmethod'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0xbcb): first defined here
+tool_paramhlp.o: In function `delegation':
+tool_paramhlp.c:(.text+0xc3b): multiple definition of `delegation'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0xc3b): first defined here
+tool_paramhlp.o: In function `get_args':
+tool_paramhlp.c:(.text+0xcd7): multiple definition of `get_args'
+tool_paramhlp.o:tool_paramhlp.c:(.text+0xcd7): first defined here
+tool_libinfo.o:(.bss+0x0): multiple definition of `curlinfo'
+tool_libinfo.o:(.bss+0x0): first defined here
+tool_libinfo.o:(.bss+0x8): multiple definition of `built_in_protos'
+tool_libinfo.o:(.bss+0x8): first defined here
+tool_libinfo.o: In function `get_libcurl_info':
+tool_libinfo.c:(.text+0x90): multiple definition of `get_libcurl_info'
+tool_libinfo.o:tool_libinfo.c:(.text+0x90): first defined here
+tool_hugehelp.o: In function `hugehelp':
+tool_hugehelp.c:(.text+0xd3): multiple definition of `hugehelp'
+tool_hugehelp.o:tool_hugehelp.c:(.text+0xd3): first defined here
+tool_cb_dbg.o: In function `tool_debug_cb':
+tool_cb_dbg.c:(.text+0x90): multiple definition of `tool_debug_cb'
+tool_cb_dbg.o:tool_cb_dbg.c:(.text+0x90): first defined here
+tool_cb_rea.o: In function `tool_read_cb':
+tool_cb_rea.c:(.text+0x90): multiple definition of `tool_read_cb'
+tool_cb_rea.o:tool_cb_rea.c:(.text+0x90): first defined here
+tool_cfgable.o: In function `config_init':
+tool_cfgable.c:(.text+0x90): multiple definition of `config_init'
+tool_cfgable.o:tool_cfgable.c:(.text+0x90): first defined here
+tool_cfgable.o: In function `config_free':
+tool_cfgable.c:(.text+0x972): multiple definition of `config_free'
+tool_cfgable.o:tool_cfgable.c:(.text+0x972): first defined here
+tool_getparam.o: In function `getparameter':
+tool_getparam.c:(.text+0x272): multiple definition of `getparameter'
+tool_getparam.o:tool_getparam.c:(.text+0x272): first defined here
+tool_getparam.o: In function `parse_args':
+tool_getparam.c:(.text+0x4c81): multiple definition of `parse_args'
+tool_getparam.o:tool_getparam.c:(.text+0x4c81): first defined here
+tool_sleep.o: In function `tool_go_sleep':
+tool_sleep.c:(.text+0x90): multiple definition of `tool_go_sleep'
+tool_sleep.o:tool_sleep.c:(.text+0x90): first defined here
+tool_cb_hdr.o: In function `tool_header_cb':
+tool_cb_hdr.c:(.text+0x90): multiple definition of `tool_header_cb'
+tool_cb_hdr.o:tool_cb_hdr.c:(.text+0x90): first defined here
+../lib/rawstr.o: In function `Curl_raw_toupper':
+rawstr.c:(.text+0x90): multiple definition of `Curl_raw_toupper'
+../lib/rawstr.o:rawstr.c:(.text+0x90): first defined here
+../lib/rawstr.o: In function `Curl_raw_equal':
+rawstr.c:(.text+0xb4): multiple definition of `Curl_raw_equal'
+../lib/rawstr.o:rawstr.c:(.text+0xb4): first defined here
+../lib/rawstr.o: In function `Curl_raw_nequal':
+rawstr.c:(.text+0x144): multiple definition of `Curl_raw_nequal'
+../lib/rawstr.o:rawstr.c:(.text+0x144): first defined here
+../lib/rawstr.o: In function `Curl_strntoupper':
+rawstr.c:(.text+0x1f2): multiple definition of `Curl_strntoupper'
+../lib/rawstr.o:rawstr.c:(.text+0x1f2): first defined here
+../lib/nonblock.o: In function `curlx_nonblock':
+nonblock.c:(.text+0x90): multiple definition of `curlx_nonblock'
+../lib/nonblock.o:nonblock.c:(.text+0x90): first defined here
+../lib/warnless.o: In function `curlx_ultous':
+warnless.c:(.text+0x0): multiple definition of `curlx_ultous'
+../lib/warnless.o:warnless.c:(.text+0x0): first defined here
+../lib/warnless.o: In function `curlx_ultouc':
+warnless.c:(.text+0xe): multiple definition of `curlx_ultouc'
+../lib/warnless.o:warnless.c:(.text+0xe): first defined here
+../lib/warnless.o: In function `curlx_ultosi':
+warnless.c:(.text+0x1c): multiple definition of `curlx_ultosi'
+../lib/warnless.o:warnless.c:(.text+0x1c): first defined here
+../lib/warnless.o: In function `curlx_uztoso':
+warnless.c:(.text+0x2f): multiple definition of `curlx_uztoso'
+../lib/warnless.o:warnless.c:(.text+0x2f): first defined here
+../lib/warnless.o: In function `curlx_uztosi':
+warnless.c:(.text+0x4a): multiple definition of `curlx_uztosi'
+../lib/warnless.o:warnless.c:(.text+0x4a): first defined here
+../lib/warnless.o: In function `curlx_uztoul':
+warnless.c:(.text+0x5d): multiple definition of `curlx_uztoul'
+../lib/warnless.o:warnless.c:(.text+0x5d): first defined here
+../lib/warnless.o: In function `curlx_uztoui':
+warnless.c:(.text+0x6b): multiple definition of `curlx_uztoui'
+../lib/warnless.o:warnless.c:(.text+0x6b): first defined here
+../lib/warnless.o: In function `curlx_sltosi':
+warnless.c:(.text+0x79): multiple definition of `curlx_sltosi'
+../lib/warnless.o:warnless.c:(.text+0x79): first defined here
+../lib/warnless.o: In function `curlx_sltoui':
+warnless.c:(.text+0x8c): multiple definition of `curlx_sltoui'
+../lib/warnless.o:warnless.c:(.text+0x8c): first defined here
+../lib/warnless.o: In function `curlx_sltous':
+warnless.c:(.text+0x9a): multiple definition of `curlx_sltous'
+../lib/warnless.o:warnless.c:(.text+0x9a): first defined here
+../lib/warnless.o: In function `curlx_uztosz':
+warnless.c:(.text+0xa8): multiple definition of `curlx_uztosz'
+../lib/warnless.o:warnless.c:(.text+0xa8): first defined here
+../lib/warnless.o: In function `curlx_sotouz':
+warnless.c:(.text+0xc3): multiple definition of `curlx_sotouz'
+../lib/warnless.o:warnless.c:(.text+0xc3): first defined here
+../lib/warnless.o: In function `curlx_sztosi':
+warnless.c:(.text+0xd1): multiple definition of `curlx_sztosi'
+../lib/warnless.o:warnless.c:(.text+0xd1): first defined here
+../lib/warnless.o: In function `curlx_sitouz':
+warnless.c:(.text+0xe4): multiple definition of `curlx_sitouz'
+../lib/warnless.o:warnless.c:(.text+0xe4): first defined here
+../lib/libcurl.a(multi.o): In function `multi_runsingle':
+multi.c:(.text+0x1a38): undefined reference to `Curl_pgrsTime'
+multi.c:(.text+0x1a5d): undefined reference to `Curl_pgrsTime'
+multi.c:(.text+0x2534): undefined reference to `Curl_pgrsUpdate'
+multi.c:(.text+0x2d69): undefined reference to `Curl_pgrsUpdate'
+../lib/libcurl.a(vtls.o): In function `Curl_ssl_connect':
+vtls.c:(.text+0x705): undefined reference to `Curl_pgrsTime'
+../lib/libcurl.a(vtls.o): In function `Curl_ssl_connect_nonblocking':
+vtls.c:(.text+0x79c): undefined reference to `Curl_pgrsTime'
+../lib/libcurl.a(openssl.o): In function `rand_enough':
+openssl.c:(.text+0xf8): undefined reference to `RAND_status'
+../lib/libcurl.a(openssl.o): In function `ossl_seed':
+openssl.c:(.text+0x14f): undefined reference to `RAND_load_file'
+openssl.c:(.text+0x1a2): undefined reference to `RAND_egd'
+openssl.c:(.text+0x1da): undefined reference to `RAND_bytes'
+openssl.c:(.text+0x1f8): undefined reference to `RAND_add'
+openssl.c:(.text+0x1fd): undefined reference to `RAND_status'
+openssl.c:(.text+0x219): undefined reference to `RAND_file_name'
+openssl.c:(.text+0x235): undefined reference to `RAND_load_file'
+../lib/libcurl.a(openssl.o): In function `ssl_ui_reader':
+openssl.c:(.text+0x368): undefined reference to `UI_get_string_type'
+openssl.c:(.text+0x37c): undefined reference to `UI_get0_user_data'
+openssl.c:(.text+0x393): undefined reference to `UI_get_input_flags'
+openssl.c:(.text+0x3b1): undefined reference to `UI_set_result'
+openssl.c:(.text+0x3be): undefined reference to `UI_OpenSSL'
+openssl.c:(.text+0x3c6): undefined reference to `UI_method_get_reader'
+../lib/libcurl.a(openssl.o): In function `ssl_ui_writer':
+openssl.c:(.text+0x3f7): undefined reference to `UI_get_string_type'
+openssl.c:(.text+0x40b): undefined reference to `UI_get0_user_data'
+openssl.c:(.text+0x41c): undefined reference to `UI_get_input_flags'
+openssl.c:(.text+0x430): undefined reference to `UI_OpenSSL'
+openssl.c:(.text+0x438): undefined reference to `UI_method_get_writer'
+../lib/libcurl.a(openssl.o): In function `cert_stuff':
+openssl.c:(.text+0x4ea): undefined reference to `SSL_CTX_set_default_passwd_cb_userdata'
+openssl.c:(.text+0x4fe): undefined reference to `SSL_CTX_set_default_passwd_cb'
+openssl.c:(.text+0x545): undefined reference to `SSL_CTX_use_certificate_chain_file'
+openssl.c:(.text+0x54f): undefined reference to `ERR_get_error'
+openssl.c:(.text+0x55c): undefined reference to `ERR_error_string'
+openssl.c:(.text+0x5a0): undefined reference to `SSL_CTX_use_certificate_file'
+openssl.c:(.text+0x5aa): undefined reference to `ERR_get_error'
+openssl.c:(.text+0x5b7): undefined reference to `ERR_error_string'
+openssl.c:(.text+0x638): undefined reference to `ENGINE_ctrl'
+openssl.c:(.text+0x68b): undefined reference to `ENGINE_ctrl_cmd'
+openssl.c:(.text+0x694): undefined reference to `ERR_get_error'
+openssl.c:(.text+0x6a1): undefined reference to `ERR_error_string'
+openssl.c:(.text+0x704): undefined reference to `SSL_CTX_use_certificate'
+openssl.c:(.text+0x72b): undefined reference to `X509_free'
+openssl.c:(.text+0x73e): undefined reference to `X509_free'
+openssl.c:(.text+0x7c7): undefined reference to `d2i_PKCS12_fp'
+openssl.c:(.text+0x80a): undefined reference to `PKCS12_PBE_add'
+openssl.c:(.text+0x830): undefined reference to `PKCS12_parse'
+openssl.c:(.text+0x839): undefined reference to `ERR_get_error'
+openssl.c:(.text+0x846): undefined reference to `ERR_error_string'
+openssl.c:(.text+0x86b): undefined reference to `PKCS12_free'
+openssl.c:(.text+0x881): undefined reference to `PKCS12_free'
+openssl.c:(.text+0x897): undefined reference to `SSL_CTX_use_certificate'
+openssl.c:(.text+0x8a1): undefined reference to `ERR_get_error'
+openssl.c:(.text+0x8ae): undefined reference to `ERR_error_string'
+openssl.c:(.text+0x8e2): undefined reference to `SSL_CTX_use_PrivateKey'
+openssl.c:(.text+0x918): undefined reference to `SSL_CTX_check_private_key'
+openssl.c:(.text+0x95c): undefined reference to `sk_pop'
+openssl.c:(.text+0x980): undefined reference to `SSL_CTX_ctrl'
+openssl.c:(.text+0x991): undefined reference to `X509_free'
+openssl.c:(.text+0x9bf): undefined reference to `SSL_CTX_add_client_CA'
+openssl.c:(.text+0x9e7): undefined reference to `sk_num'
+openssl.c:(.text+0xa02): undefined reference to `EVP_PKEY_free'
+openssl.c:(.text+0xa0e): undefined reference to `X509_free'
+openssl.c:(.text+0xa17): undefined reference to `X509_free'
+openssl.c:(.text+0xa1f): undefined reference to `sk_pop_free'
+openssl.c:(.text+0xad5): undefined reference to `SSL_CTX_use_PrivateKey_file'
+openssl.c:(.text+0xb44): undefined reference to `UI_create_method'
+openssl.c:(.text+0xb74): undefined reference to `UI_OpenSSL'
+openssl.c:(.text+0xb7c): undefined reference to `UI_method_get_opener'
+openssl.c:(.text+0xb8e): undefined reference to `UI_method_set_opener'
+openssl.c:(.text+0xb93): undefined reference to `UI_OpenSSL'
+openssl.c:(.text+0xb9b): undefined reference to `UI_method_get_closer'
+openssl.c:(.text+0xbad): undefined reference to `UI_method_set_closer'
+openssl.c:(.text+0xbbe): undefined reference to `UI_method_set_reader'
+openssl.c:(.text+0xbcf): undefined reference to `UI_method_set_writer'
+openssl.c:(.text+0xbf8): undefined reference to `ENGINE_load_private_key'
+openssl.c:(.text+0xc08): undefined reference to `UI_destroy_method'
+openssl.c:(.text+0xc45): undefined reference to `SSL_CTX_use_PrivateKey'
+openssl.c:(.text+0xc6c): undefined reference to `EVP_PKEY_free'
+openssl.c:(.text+0xc82): undefined reference to `EVP_PKEY_free'
+openssl.c:(.text+0xcfb): undefined reference to `SSL_new'
+openssl.c:(.text+0xd32): undefined reference to `SSL_get_certificate'
+openssl.c:(.text+0xd4b): undefined reference to `X509_get_pubkey'
+openssl.c:(.text+0xd5b): undefined reference to `SSL_get_privatekey'
+openssl.c:(.text+0xd6d): undefined reference to `EVP_PKEY_copy_parameters'
+openssl.c:(.text+0xd79): undefined reference to `EVP_PKEY_free'
+openssl.c:(.text+0xd85): undefined reference to `SSL_free'
+openssl.c:(.text+0xd94): undefined reference to `SSL_CTX_check_private_key'
+../lib/libcurl.a(openssl.o): In function `x509_name_oneline':
+openssl.c:(.text+0xdd5): undefined reference to `BIO_s_mem'
+openssl.c:(.text+0xddd): undefined reference to `BIO_new'
+openssl.c:(.text+0xe0c): undefined reference to `X509_NAME_print_ex'
+openssl.c:(.text+0xe2c): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0xe80): undefined reference to `BIO_free'
+../lib/libcurl.a(openssl.o): In function `SSL_strerror':
+openssl.c:(.text+0xeb7): undefined reference to `ERR_error_string_n'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_init':
+openssl.c:(.text+0xec6): undefined reference to `OPENSSL_load_builtin_modules'
+openssl.c:(.text+0xecb): undefined reference to `ENGINE_load_builtin_engines'
+openssl.c:(.text+0xedf): undefined reference to `CONF_modules_load_file'
+openssl.c:(.text+0xee4): undefined reference to `SSL_load_error_strings'
+openssl.c:(.text+0xee9): undefined reference to `SSL_library_init'
+openssl.c:(.text+0xef9): undefined reference to `OPENSSL_add_all_algorithms_noconf'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_cleanup':
+openssl.c:(.text+0xf09): undefined reference to `EVP_cleanup'
+openssl.c:(.text+0xf0e): undefined reference to `ENGINE_cleanup'
+openssl.c:(.text+0xf13): undefined reference to `CRYPTO_cleanup_all_ex_data'
+openssl.c:(.text+0xf18): undefined reference to `ERR_free_strings'
+openssl.c:(.text+0xf22): undefined reference to `ERR_remove_thread_state'
+openssl.c:(.text+0xf27): undefined reference to `CONF_modules_free'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_check_cxn':
+openssl.c:(.text+0xf54): undefined reference to `SSL_peek'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_set_engine':
+openssl.c:(.text+0xfa0): undefined reference to `ENGINE_by_id'
+openssl.c:(.text+0xffe): undefined reference to `ENGINE_finish'
+openssl.c:(.text+0x1014): undefined reference to `ENGINE_free'
+openssl.c:(.text+0x1032): undefined reference to `ENGINE_init'
+openssl.c:(.text+0x1042): undefined reference to `ENGINE_free'
+openssl.c:(.text+0x1047): undefined reference to `ERR_get_error'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_set_engine_default':
+openssl.c:(.text+0x10d8): undefined reference to `ENGINE_set_default'
+openssl.c:(.text+0x10ef): undefined reference to `ENGINE_get_id'
+openssl.c:(.text+0x111d): undefined reference to `ENGINE_get_id'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_engines_list':
+openssl.c:(.text+0x115d): undefined reference to `ENGINE_get_first'
+openssl.c:(.text+0x116f): undefined reference to `ENGINE_get_id'
+openssl.c:(.text+0x11b3): undefined reference to `ENGINE_get_next'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_close':
+openssl.c:(.text+0x121a): undefined reference to `SSL_shutdown'
+openssl.c:(.text+0x122a): undefined reference to `SSL_set_connect_state'
+openssl.c:(.text+0x123a): undefined reference to `SSL_free'
+openssl.c:(.text+0x1263): undefined reference to `SSL_CTX_free'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_shutdown':
+openssl.c:(.text+0x12f5): undefined reference to `SSL_shutdown'
+openssl.c:(.text+0x1351): undefined reference to `ERR_clear_error'
+openssl.c:(.text+0x1391): undefined reference to `SSL_read'
+openssl.c:(.text+0x13d0): undefined reference to `SSL_get_error'
+openssl.c:(.text+0x1438): undefined reference to `ERR_get_error'
+openssl.c:(.text+0x1459): undefined reference to `ERR_error_string'
+openssl.c:(.text+0x14fd): undefined reference to `SSL_get_shutdown'
+openssl.c:(.text+0x1563): undefined reference to `SSL_free'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_session_free':
+openssl.c:(.text+0x1594): undefined reference to `SSL_SESSION_free'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_close_all':
+openssl.c:(.text+0x15c5): undefined reference to `ENGINE_finish'
+openssl.c:(.text+0x15d8): undefined reference to `ENGINE_free'
+../lib/libcurl.a(openssl.o): In function `verifyhost':
+openssl.c:(.text+0x16c7): undefined reference to `X509_get_ext_d2i'
+openssl.c:(.text+0x16e2): undefined reference to `sk_num'
+openssl.c:(.text+0x1702): undefined reference to `sk_value'
+openssl.c:(.text+0x1725): undefined reference to `ASN1_STRING_data'
+openssl.c:(.text+0x1739): undefined reference to `ASN1_STRING_length'
+openssl.c:(.text+0x182e): undefined reference to `GENERAL_NAMES_free'
+openssl.c:(.text+0x18bc): undefined reference to `X509_get_subject_name'
+openssl.c:(.text+0x18e3): undefined reference to `X509_NAME_get_index_by_NID'
+openssl.c:(.text+0x1907): undefined reference to `X509_NAME_get_entry'
+openssl.c:(.text+0x190f): undefined reference to `X509_NAME_ENTRY_get_data'
+openssl.c:(.text+0x192a): undefined reference to `ASN1_STRING_type'
+openssl.c:(.text+0x193f): undefined reference to `ASN1_STRING_length'
+openssl.c:(.text+0x1963): undefined reference to `CRYPTO_malloc'
+openssl.c:(.text+0x1988): undefined reference to `ASN1_STRING_data'
+openssl.c:(.text+0x19ca): undefined reference to `ASN1_STRING_to_UTF8'
+openssl.c:(.text+0x1a48): undefined reference to `CRYPTO_free'
+openssl.c:(.text+0x1b15): undefined reference to `CRYPTO_free'
+../lib/libcurl.a(openssl.o): In function `verifystatus':
+openssl.c:(.text+0x1b95): undefined reference to `SSL_ctrl'
+openssl.c:(.text+0x1bd9): undefined reference to `d2i_OCSP_RESPONSE'
+openssl.c:(.text+0x1c12): undefined reference to `OCSP_response_status'
+openssl.c:(.text+0x1c28): undefined reference to `OCSP_response_status_str'
+openssl.c:(.text+0x1c61): undefined reference to `OCSP_response_get1_basic'
+openssl.c:(.text+0x1ca1): undefined reference to `SSL_get_peer_cert_chain'
+openssl.c:(.text+0x1cb8): undefined reference to `SSL_CTX_get_cert_store'
+openssl.c:(.text+0x1cc8): undefined reference to `sk_num'
+openssl.c:(.text+0x1ce1): undefined reference to `sk_num'
+openssl.c:(.text+0x1cf9): undefined reference to `sk_num'
+openssl.c:(.text+0x1d0e): undefined reference to `sk_value'
+openssl.c:(.text+0x1d2c): undefined reference to `sk_value'
+openssl.c:(.text+0x1d43): undefined reference to `X509_check_issued'
+openssl.c:(.text+0x1d5a): undefined reference to `OCSP_basic_add1_cert'
+openssl.c:(.text+0x1d90): undefined reference to `sk_num'
+openssl.c:(.text+0x1dae): undefined reference to `OCSP_basic_verify'
+openssl.c:(.text+0x1df9): undefined reference to `OCSP_resp_get0'
+openssl.c:(.text+0x1e30): undefined reference to `OCSP_single_get0_status'
+openssl.c:(.text+0x1e55): undefined reference to `OCSP_check_validity'
+openssl.c:(.text+0x1e88): undefined reference to `OCSP_cert_status_str'
+openssl.c:(.text+0x1ed2): undefined reference to `OCSP_crl_reason_str'
+openssl.c:(.text+0x1f09): undefined reference to `OCSP_resp_count'
+openssl.c:(.text+0x1f25): undefined reference to `OCSP_BASICRESP_free'
+openssl.c:(.text+0x1f31): undefined reference to `OCSP_RESPONSE_free'
+../lib/libcurl.a(openssl.o): In function `get_ssl_version_txt':
+openssl.c:(.text+0x244f): undefined reference to `SSL_version'
+../lib/libcurl.a(openssl.o): In function `ossl_connect_step1':
+openssl.c:(.text+0x256a): undefined reference to `SSLv23_client_method'
+openssl.c:(.text+0x25d2): undefined reference to `SSL_CTX_free'
+openssl.c:(.text+0x25de): undefined reference to `SSL_CTX_new'
+openssl.c:(.text+0x25fb): undefined reference to `ERR_peek_error'
+openssl.c:(.text+0x2608): undefined reference to `ERR_error_string'
+openssl.c:(.text+0x264a): undefined reference to `SSL_CTX_ctrl'
+openssl.c:(.text+0x267e): undefined reference to `SSL_CTX_set_msg_callback'
+openssl.c:(.text+0x26a2): undefined reference to `SSL_CTX_ctrl'
+openssl.c:(.text+0x27a2): undefined reference to `SSL_CTX_ctrl'
+openssl.c:(.text+0x27cd): undefined reference to `SSL_CTX_set_next_proto_select_cb'
+openssl.c:(.text+0x2853): undefined reference to `SSL_CTX_set_alpn_protos'
+openssl.c:(.text+0x28ff): undefined reference to `SSL_CTX_set_cipher_list'
+openssl.c:(.text+0x2998): undefined reference to `SSL_CTX_set_srp_username'
+openssl.c:(.text+0x29df): undefined reference to `SSL_CTX_set_srp_password'
+openssl.c:(.text+0x2a3e): undefined reference to `SSL_CTX_set_cipher_list'
+openssl.c:(.text+0x2aaf): undefined reference to `SSL_CTX_load_verify_locations'
+openssl.c:(.text+0x2bd1): undefined reference to `X509_LOOKUP_file'
+openssl.c:(.text+0x2be4): undefined reference to `SSL_CTX_get_cert_store'
+openssl.c:(.text+0x2bef): undefined reference to `X509_STORE_add_lookup'
+openssl.c:(.text+0x2c19): undefined reference to `X509_load_crl_file'
+openssl.c:(.text+0x2c6e): undefined reference to `SSL_CTX_get_cert_store'
+openssl.c:(.text+0x2c7b): undefined reference to `X509_STORE_set_flags'
+openssl.c:(.text+0x2cdb): undefined reference to `SSL_CTX_set_verify'
+openssl.c:(.text+0x2d56): undefined reference to `SSL_free'
+openssl.c:(.text+0x2d66): undefined reference to `SSL_new'
+openssl.c:(.text+0x2dcc): undefined reference to `SSL_ctrl'
+openssl.c:(.text+0x2ddc): undefined reference to `SSL_set_connect_state'
+openssl.c:(.text+0x2e5f): undefined reference to `SSL_ctrl'
+openssl.c:(.text+0x2eb3): undefined reference to `SSL_set_session'
+openssl.c:(.text+0x2ebc): undefined reference to `ERR_get_error'
+openssl.c:(.text+0x2ec9): undefined reference to `ERR_error_string'
+openssl.c:(.text+0x2f14): undefined reference to `SSL_set_fd'
+openssl.c:(.text+0x2f1d): undefined reference to `ERR_get_error'
+openssl.c:(.text+0x2f2a): undefined reference to `ERR_error_string'
+../lib/libcurl.a(openssl.o): In function `ossl_connect_step2':
+openssl.c:(.text+0x2fc0): undefined reference to `ERR_clear_error'
+openssl.c:(.text+0x2fd0): undefined reference to `SSL_connect'
+openssl.c:(.text+0x2ff2): undefined reference to `SSL_get_error'
+openssl.c:(.text+0x305d): undefined reference to `ERR_get_error'
+openssl.c:(.text+0x30ab): undefined reference to `SSL_get_verify_result'
+openssl.c:(.text+0x30c2): undefined reference to `X509_verify_cert_error_string'
+openssl.c:(.text+0x31d7): undefined reference to `SSL_get_current_cipher'
+openssl.c:(.text+0x31df): undefined reference to `SSL_CIPHER_get_name'
+openssl.c:(.text+0x323c): undefined reference to `SSL_get0_alpn_selected'
+../lib/libcurl.a(openssl.o): In function `asn1_object_dump':
+openssl.c:(.text+0x32f7): undefined reference to `i2t_ASN1_OBJECT'
+../lib/libcurl.a(openssl.o): In function `pubkey_show':
+openssl.c:(.text+0x336b): undefined reference to `BN_print'
+openssl.c:(.text+0x3388): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x33c5): undefined reference to `BIO_ctrl'
+../lib/libcurl.a(openssl.o): In function `X509V3_ext':
+openssl.c:(.text+0x33fb): undefined reference to `sk_num'
+openssl.c:(.text+0x3429): undefined reference to `sk_value'
+openssl.c:(.text+0x343d): undefined reference to `BIO_s_mem'
+openssl.c:(.text+0x3445): undefined reference to `BIO_new'
+openssl.c:(.text+0x3466): undefined reference to `X509_EXTENSION_get_object'
+openssl.c:(.text+0x349f): undefined reference to `X509V3_EXT_print'
+openssl.c:(.text+0x34af): undefined reference to `X509_EXTENSION_get_data'
+openssl.c:(.text+0x34c1): undefined reference to `ASN1_STRING_print'
+openssl.c:(.text+0x34de): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x35e5): undefined reference to `BIO_free'
+openssl.c:(.text+0x35f8): undefined reference to `sk_num'
+../lib/libcurl.a(openssl.o): In function `get_cert_chain':
+openssl.c:(.text+0x3642): undefined reference to `SSL_get_peer_cert_chain'
+openssl.c:(.text+0x3663): undefined reference to `sk_num'
+openssl.c:(.text+0x368d): undefined reference to `BIO_s_mem'
+openssl.c:(.text+0x3695): undefined reference to `BIO_new'
+openssl.c:(.text+0x36b6): undefined reference to `sk_value'
+openssl.c:(.text+0x36ce): undefined reference to `X509_get_subject_name'
+openssl.c:(.text+0x36e7): undefined reference to `X509_NAME_print_ex'
+openssl.c:(.text+0x3707): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x374b): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x375d): undefined reference to `X509_get_issuer_name'
+openssl.c:(.text+0x3776): undefined reference to `X509_NAME_print_ex'
+openssl.c:(.text+0x3796): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x37da): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x37f2): undefined reference to `ASN1_INTEGER_get'
+openssl.c:(.text+0x380b): undefined reference to `BIO_printf'
+openssl.c:(.text+0x382b): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x386f): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x3881): undefined reference to `X509_get_serialNumber'
+openssl.c:(.text+0x38a4): undefined reference to `BIO_puts'
+openssl.c:(.text+0x38d9): undefined reference to `BIO_printf'
+openssl.c:(.text+0x3908): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x394c): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x3977): undefined reference to `i2a_ASN1_OBJECT'
+openssl.c:(.text+0x3997): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x39db): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x39fe): undefined reference to `i2a_ASN1_OBJECT'
+openssl.c:(.text+0x3a1e): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x3a62): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x3aaa): undefined reference to `ASN1_TIME_print'
+openssl.c:(.text+0x3aca): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x3b14): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x3b38): undefined reference to `ASN1_TIME_print'
+openssl.c:(.text+0x3b58): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x3ba2): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x3bb4): undefined reference to `X509_get_pubkey'
+openssl.c:(.text+0x3c29): undefined reference to `BN_num_bits'
+openssl.c:(.text+0x3c41): undefined reference to `BIO_printf'
+openssl.c:(.text+0x3c61): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x3cab): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x40ee): undefined reference to `EVP_PKEY_free'
+openssl.c:(.text+0x4123): undefined reference to `BIO_printf'
+openssl.c:(.text+0x4152): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x419c): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x41b5): undefined reference to `PEM_write_bio_X509'
+openssl.c:(.text+0x41d5): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x421f): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x4241): undefined reference to `BIO_free'
+../lib/libcurl.a(openssl.o): In function `pkp_pin_peer_pubkey':
+openssl.c:(.text+0x42b9): undefined reference to `i2d_X509_PUBKEY'
+openssl.c:(.text+0x42db): undefined reference to `CRYPTO_malloc'
+openssl.c:(.text+0x430a): undefined reference to `i2d_X509_PUBKEY'
+openssl.c:(.text+0x4366): undefined reference to `CRYPTO_free'
+../lib/libcurl.a(openssl.o): In function `servercert':
+openssl.c:(.text+0x43a5): undefined reference to `BIO_s_mem'
+openssl.c:(.text+0x43ad): undefined reference to `BIO_new'
+openssl.c:(.text+0x43e3): undefined reference to `SSL_get_peer_certificate'
+openssl.c:(.text+0x4456): undefined reference to `X509_get_subject_name'
+openssl.c:(.text+0x44bb): undefined reference to `ASN1_TIME_print'
+openssl.c:(.text+0x44d8): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x4515): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x453a): undefined reference to `ASN1_TIME_print'
+openssl.c:(.text+0x4557): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x4594): undefined reference to `BIO_ctrl'
+openssl.c:(.text+0x45a3): undefined reference to `BIO_free'
+openssl.c:(.text+0x45e2): undefined reference to `X509_free'
+openssl.c:(.text+0x4606): undefined reference to `X509_get_issuer_name'
+openssl.c:(.text+0x46d6): undefined reference to `X509_free'
+openssl.c:(.text+0x4707): undefined reference to `PEM_read_X509'
+openssl.c:(.text+0x4749): undefined reference to `X509_free'
+openssl.c:(.text+0x4755): undefined reference to `X509_free'
+openssl.c:(.text+0x478e): undefined reference to `X509_check_issued'
+openssl.c:(.text+0x47c9): undefined reference to `X509_free'
+openssl.c:(.text+0x47d5): undefined reference to `X509_free'
+openssl.c:(.text+0x4818): undefined reference to `X509_free'
+openssl.c:(.text+0x4828): undefined reference to `SSL_get_verify_result'
+openssl.c:(.text+0x4876): undefined reference to `X509_verify_cert_error_string'
+openssl.c:(.text+0x48ae): undefined reference to `X509_verify_cert_error_string'
+openssl.c:(.text+0x4924): undefined reference to `X509_free'
+openssl.c:(.text+0x49b2): undefined reference to `X509_free'
+../lib/libcurl.a(openssl.o): In function `ossl_connect_step3':
+openssl.c:(.text+0x4a31): undefined reference to `SSL_get1_session'
+openssl.c:(.text+0x4af2): undefined reference to `SSL_SESSION_free'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_data_pending':
+openssl.c:(.text+0x4f46): undefined reference to `SSL_pending'
+../lib/libcurl.a(openssl.o): In function `ossl_send':
+openssl.c:(.text+0x4f86): undefined reference to `ERR_clear_error'
+openssl.c:(.text+0x4fe4): undefined reference to `SSL_write'
+openssl.c:(.text+0x5029): undefined reference to `SSL_get_error'
+openssl.c:(.text+0x50a7): undefined reference to `ERR_get_error'
+openssl.c:(.text+0x50c1): undefined reference to `ERR_error_string'
+../lib/libcurl.a(openssl.o): In function `ossl_recv':
+openssl.c:(.text+0x5172): undefined reference to `ERR_clear_error'
+openssl.c:(.text+0x51d0): undefined reference to `SSL_read'
+openssl.c:(.text+0x521a): undefined reference to `SSL_get_error'
+openssl.c:(.text+0x525a): undefined reference to `ERR_get_error'
+openssl.c:(.text+0x5289): undefined reference to `ERR_error_string'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_version':
+openssl.c:(.text+0x52ec): undefined reference to `SSLeay'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_random':
+openssl.c:(.text+0x5405): undefined reference to `RAND_bytes'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_md5sum':
+openssl.c:(.text+0x5430): undefined reference to `MD5_Init'
+openssl.c:(.text+0x5447): undefined reference to `MD5_Update'
+openssl.c:(.text+0x545a): undefined reference to `MD5_Final'
+../lib/libcurl.a(openssl.o): In function `Curl_ossl_sha256sum':
+openssl.c:(.text+0x5489): undefined reference to `SHA256_Init'
+openssl.c:(.text+0x54a0): undefined reference to `SHA256_Update'
+openssl.c:(.text+0x54b6): undefined reference to `SHA256_Final'
+../lib/libcurl.a(connect.o): In function `Curl_is_connected':
+connect.c:(.text+0x13c4): undefined reference to `Curl_pgrsTime'
+../lib/libcurl.a(url.o): In function `Curl_setup_conn':
+url.c:(.text+0xdfd4): undefined reference to `Curl_pgrsTime'
+url.c:(.text+0xe10a): undefined reference to `Curl_pgrsTime'
+url.c:(.text+0xe11b): undefined reference to `Curl_pgrsTime'
+../lib/libcurl.a(url.o): In function `Curl_done':
+url.c:(.text+0xe366): undefined reference to `Curl_pgrsDone'
+../lib/libcurl.a(url.o): In function `Curl_init_do':
+url.c:(.text+0xe666): undefined reference to `Curl_pgrsSetUploadCounter'
+url.c:(.text+0xe677): undefined reference to `Curl_pgrsSetDownloadCounter'
+../lib/libcurl.a(url.o): In function `do_complete':
+url.c:(.text+0xe6da): undefined reference to `Curl_pgrsTime'
+../lib/libcurl.a(transfer.o): In function `readwrite_data':
+transfer.c:(.text+0x791): undefined reference to `Curl_pgrsTime'
+transfer.c:(.text+0x10ab): undefined reference to `Curl_pgrsSetDownloadCounter'
+../lib/libcurl.a(transfer.o): In function `readwrite_upload':
+transfer.c:(.text+0x14da): undefined reference to `Curl_pgrsTime'
+transfer.c:(.text+0x1a0e): undefined reference to `Curl_pgrsSetUploadCounter'
+../lib/libcurl.a(transfer.o): In function `Curl_readwrite':
+transfer.c:(.text+0x1caa): undefined reference to `Curl_pgrsUpdate'
+transfer.c:(.text+0x1ec5): undefined reference to `Curl_pgrsUpdate'
+../lib/libcurl.a(transfer.o): In function `Curl_pretransfer':
+transfer.c:(.text+0x22be): undefined reference to `Curl_pgrsResetTimesSizes'
+transfer.c:(.text+0x22ca): undefined reference to `Curl_pgrsStartNow'
+../lib/libcurl.a(transfer.o): In function `Curl_follow':
+transfer.c:(.text+0x2c3f): undefined reference to `Curl_pgrsTime'
+transfer.c:(.text+0x2c4b): undefined reference to `Curl_pgrsResetTimesSizes'
+../lib/libcurl.a(transfer.o): In function `Curl_setup_transfer':
+transfer.c:(.text+0x2f7a): undefined reference to `Curl_pgrsSetDownloadSize'
+../lib/libcurl.a(ftp.o): In function `InitiateTransfer':
+ftp.c:(.text+0x6eb): undefined reference to `Curl_pgrsSetUploadSize'
+../lib/libcurl.a(ftp.o): In function `AllowServerConnect':
+ftp.c:(.text+0x7d4): undefined reference to `Curl_pgrsTime'
+../lib/libcurl.a(ftp.o): In function `Curl_GetFTPResponse':
+ftp.c:(.text+0xb4c): undefined reference to `Curl_pgrsUpdate'
+../lib/libcurl.a(ftp.o): In function `ftp_state_quote':
+ftp.c:(.text+0x298e): undefined reference to `Curl_pgrsSetDownloadSize'
+../lib/libcurl.a(ftp.o): In function `ftp_state_size_resp':
+ftp.c:(.text+0x3cf9): undefined reference to `Curl_pgrsSetDownloadSize'
+ftp.c:(.text+0x3d23): undefined reference to `Curl_pgrsSetDownloadSize'
+../lib/libcurl.a(ftp.o): In function `ftp_regular_transfer':
+ftp.c:(.text+0x795c): undefined reference to `Curl_pgrsSetUploadCounter'
+ftp.c:(.text+0x796d): undefined reference to `Curl_pgrsSetDownloadCounter'
+ftp.c:(.text+0x7980): undefined reference to `Curl_pgrsSetUploadSize'
+ftp.c:(.text+0x7993): undefined reference to `Curl_pgrsSetDownloadSize'
+../lib/libcurl.a(smtp.o): In function `smtp_state_data_resp':
+smtp.c:(.text+0x1328): undefined reference to `Curl_pgrsSetUploadSize'
+../lib/libcurl.a(smtp.o): In function `smtp_regular_transfer':
+smtp.c:(.text+0x1d83): undefined reference to `Curl_pgrsSetUploadCounter'
+smtp.c:(.text+0x1d94): undefined reference to `Curl_pgrsSetDownloadCounter'
+smtp.c:(.text+0x1da7): undefined reference to `Curl_pgrsSetUploadSize'
+smtp.c:(.text+0x1dba): undefined reference to `Curl_pgrsSetDownloadSize'
+../lib/libcurl.a(telnet.o): In function `telnet_do':
+telnet.c:(.text+0x2a0f): undefined reference to `Curl_pgrsSetDownloadCounter'
+telnet.c:(.text+0x2b3c): undefined reference to `Curl_pgrsSetUploadCounter'
+telnet.c:(.text+0x2bd6): undefined reference to `Curl_pgrsUpdate'
+../lib/libcurl.a(pingpong.o): In function `Curl_pp_statemach':
+pingpong.c:(.text+0x2bd): undefined reference to `Curl_pgrsUpdate'
+../lib/libcurl.a(tftp.o): In function `tftp_parse_option_ack':
+tftp.c:(.text+0x7a1): undefined reference to `Curl_pgrsSetDownloadSize'
+../lib/libcurl.a(tftp.o): In function `tftp_send_first':
+tftp.c:(.text+0xa49): undefined reference to `Curl_pgrsSetUploadSize'
+../lib/libcurl.a(tftp.o): In function `tftp_tx':
+tftp.c:(.text+0x1664): undefined reference to `Curl_pgrsSetUploadCounter'
+tftp.c:(.text+0x177b): undefined reference to `Curl_pgrsSetUploadCounter'
+../lib/libcurl.a(tftp.o): In function `tftp_connect':
+tftp.c:(.text+0x1c92): undefined reference to `Curl_pgrsStartNow'
+../lib/libcurl.a(tftp.o): In function `tftp_done':
+tftp.c:(.text+0x1cd6): undefined reference to `Curl_pgrsDone'
+../lib/libcurl.a(tftp.o): In function `tftp_receive_packet':
+tftp.c:(.text+0x1f6e): undefined reference to `Curl_pgrsSetDownloadCounter'
+tftp.c:(.text+0x2023): undefined reference to `Curl_pgrsUpdate'
+../lib/libcurl.a(tftp.o): In function `tftp_doing':
+tftp.c:(.text+0x2349): undefined reference to `Curl_pgrsUpdate'
+../lib/libcurl.a(file.o): In function `file_upload':
+file.c:(.text+0x5f3): undefined reference to `Curl_pgrsSetUploadSize'
+file.c:(.text+0x78a): undefined reference to `Curl_pgrsSetUploadCounter'
+file.c:(.text+0x799): undefined reference to `Curl_pgrsUpdate'
+file.c:(.text+0x7df): undefined reference to `Curl_pgrsUpdate'
+../lib/libcurl.a(file.o): In function `file_do':
+file.c:(.text+0x87f): undefined reference to `Curl_pgrsStartNow'
+file.c:(.text+0xb0b): undefined reference to `Curl_pgrsSetDownloadSize'
+file.c:(.text+0xc13): undefined reference to `Curl_pgrsSetDownloadSize'
+file.c:(.text+0xc6b): undefined reference to `Curl_pgrsTime'
+file.c:(.text+0xd3e): undefined reference to `Curl_pgrsSetDownloadCounter'
+file.c:(.text+0xd4d): undefined reference to `Curl_pgrsUpdate'
+file.c:(.text+0xd93): undefined reference to `Curl_pgrsUpdate'
+../lib/libcurl.a(smb.o): In function `smb_request_state':
+smb.c:(.text+0x1474): undefined reference to `Curl_pgrsSetUploadSize'
+smb.c:(.text+0x14b0): undefined reference to `Curl_pgrsSetDownloadSize'
+smb.c:(.text+0x160d): undefined reference to `Curl_pgrsSetDownloadCounter'
+smb.c:(.text+0x16c6): undefined reference to `Curl_pgrsSetUploadCounter'
+../lib/libcurl.a(rtsp.o): In function `rtsp_do':
+rtsp.c:(.text+0xff5): undefined reference to `Curl_pgrsSetUploadCounter'
+rtsp.c:(.text+0x1004): undefined reference to `Curl_pgrsUpdate'
+../lib/libcurl.a(http.o): In function `Curl_http':
+http.c:(.text+0x4114): undefined reference to `Curl_pgrsSetUploadSize'
+http.c:(.text+0x441c): undefined reference to `Curl_pgrsSetUploadSize'
+http.c:(.text+0x4606): undefined reference to `Curl_pgrsSetUploadSize'
+http.c:(.text+0x4a25): undefined reference to `Curl_pgrsSetUploadSize'
+http.c:(.text+0x4aa4): undefined reference to `Curl_pgrsSetUploadSize'
+../lib/libcurl.a(http.o):http.c:(.text+0x4b85): more undefined references to `Curl_pgrsSetUploadSize' follow
+../lib/libcurl.a(http.o): In function `Curl_http':
+http.c:(.text+0x4dcb): undefined reference to `Curl_pgrsSetUploadCounter'
+http.c:(.text+0x4dda): undefined reference to `Curl_pgrsUpdate'
+../lib/libcurl.a(http.o): In function `Curl_http_readwrite_headers':
+http.c:(.text+0x5adf): undefined reference to `Curl_pgrsSetDownloadSize'
+http.c:(.text+0x6186): undefined reference to `Curl_pgrsSetDownloadSize'
+../lib/libcurl.a(pop3.o): In function `pop3_regular_transfer':
+pop3.c:(.text+0x1a0d): undefined reference to `Curl_pgrsSetUploadCounter'
+pop3.c:(.text+0x1a1e): undefined reference to `Curl_pgrsSetDownloadCounter'
+pop3.c:(.text+0x1a31): undefined reference to `Curl_pgrsSetUploadSize'
+pop3.c:(.text+0x1a44): undefined reference to `Curl_pgrsSetDownloadSize'
+../lib/libcurl.a(http_proxy.o): In function `Curl_proxyCONNECT':
+http_proxy.c:(.text+0xea6): undefined reference to `Curl_pgrsUpdate'
+../lib/libcurl.a(md5.o): In function `Curl_md5it':
+md5.c:(.text+0xa8): undefined reference to `MD5_Init'
+md5.c:(.text+0xd1): undefined reference to `MD5_Update'
+md5.c:(.text+0xe4): undefined reference to `MD5_Final'
+../lib/libcurl.a(md5.o):(.rodata+0x0): undefined reference to `MD5_Init'
+../lib/libcurl.a(md5.o):(.rodata+0x8): undefined reference to `MD5_Update'
+../lib/libcurl.a(md5.o):(.rodata+0x10): undefined reference to `MD5_Final'
+../lib/libcurl.a(md5.o):(.rodata+0x40): undefined reference to `MD5_Init'
+../lib/libcurl.a(md5.o):(.rodata+0x48): undefined reference to `MD5_Update'
+../lib/libcurl.a(md5.o):(.rodata+0x50): undefined reference to `MD5_Final'
+../lib/libcurl.a(imap.o): In function `imap_state_fetch_resp':
+imap.c:(.text+0x1795): undefined reference to `Curl_pgrsSetDownloadSize'
+imap.c:(.text+0x1873): undefined reference to `Curl_pgrsSetDownloadSize'
+../lib/libcurl.a(imap.o): In function `imap_state_append_resp':
+imap.c:(.text+0x1ae2): undefined reference to `Curl_pgrsSetUploadSize'
+../lib/libcurl.a(imap.o): In function `imap_regular_transfer':
+imap.c:(.text+0x27c1): undefined reference to `Curl_pgrsSetUploadCounter'
+imap.c:(.text+0x27d2): undefined reference to `Curl_pgrsSetDownloadCounter'
+imap.c:(.text+0x27e5): undefined reference to `Curl_pgrsSetUploadSize'
+imap.c:(.text+0x27f8): undefined reference to `Curl_pgrsSetDownloadSize'
+../lib/libcurl.a(curl_ntlm_core.o): In function `setup_des_key':
+curl_ntlm_core.c:(.text+0x1fb): undefined reference to `DES_set_odd_parity'
+curl_ntlm_core.c:(.text+0x20e): undefined reference to `DES_set_key'
+../lib/libcurl.a(curl_ntlm_core.o): In function `Curl_ntlm_core_lm_resp':
+curl_ntlm_core.c:(.text+0x265): undefined reference to `DES_ecb_encrypt'
+curl_ntlm_core.c:(.text+0x2a2): undefined reference to `DES_ecb_encrypt'
+curl_ntlm_core.c:(.text+0x2df): undefined reference to `DES_ecb_encrypt'
+../lib/libcurl.a(curl_ntlm_core.o): In function `Curl_ntlm_core_mk_lm_hash':
+curl_ntlm_core.c:(.text+0x3b9): undefined reference to `DES_ecb_encrypt'
+curl_ntlm_core.c:(.text+0x3f7): undefined reference to `DES_ecb_encrypt'
+../lib/libcurl.a(curl_ntlm_core.o): In function `Curl_ntlm_core_mk_nt_hash':
+curl_ntlm_core.c:(.text+0x575): undefined reference to `MD4_Init'
+curl_ntlm_core.c:(.text+0x590): undefined reference to `MD4_Update'
+curl_ntlm_core.c:(.text+0x5a6): undefined reference to `MD4_Final'
+collect2: error: ld returned 1 exit status
+make: *** [curl] Error 1

@@ -1,0 +1,1 @@
+stali.mk

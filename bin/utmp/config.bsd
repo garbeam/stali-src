@@ -1,0 +1,16 @@
+
+# Customize below to fit your system.
+GROUP = utmp
+
+# paths
+PREFIX = /usr/local
+MANPREFIX = ${PREFIX}/share/man
+
+# flags
+CPPFLAGS += -DVERSION=\"${VERSION}\" -D_XOPEN_SOURCE=600
+LDLIBS   += -lutil
+
+# Objects
+
+OBJS = utmp.o bsd.o
+

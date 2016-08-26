@@ -1,0 +1,6 @@
+.deps.mk
+.targs.mk
+*.o
+*.a
+libcommon/CHECK
+y.tab.h

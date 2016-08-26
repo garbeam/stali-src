@@ -1,0 +1,14 @@
+BIN = yacc
+LIB = liby.a
+OBJ = y1.o y2.o y3.o y4.o y5.o getopt.o
+LOBJ = libmai.o libzer.o
+LOCAL_CFLAGS = -DPARSER=\"$LIBDIR/yaccpar\"
+INSTALL_BIN = yacc
+INSTALL_MAN1 = yacc.1
+
+<$mkbuild/mk.default
+
+y1.o: dextern
+y2.o: dextern sgs.h
+y3.o: dextern
+y4.o: dextern

@@ -1,0 +1,7 @@
+./xmlwf/xmlwf.o
+./xmlwf/codepage.o
+./xmlwf/xmlfile.o
+./xmlwf/unixfilemap.o
+./lib/xmltok.o
+./lib/xmlparse.o
+./lib/xmlrole.o

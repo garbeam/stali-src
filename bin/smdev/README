@@ -1,0 +1,25 @@
+What is it?
+===========
+
+smdev is a simple program to manage device nodes.  It is
+mostly compatible with mdev but doesn't have all of its features.
+
+Building
+========
+
+You need to have the kernel headers available on your
+system to build smdev.
+
+To build a statically linked smdev against musl-libc[0]
+install the relevant cross-compiler[1], then install the kernel
+headers into your cross-compiler prefix and finally run
+the following:
+
+$ make CC=x86_64-musl-linux-gcc LDFLAGS=-static
+$ x86_64-linux-musl-strip smdev
+
+On my system the above results in a 88kB statically linked
+application.
+
+[0] http://www.musl-libc.org/
+[1] http://musl.codu.org/
