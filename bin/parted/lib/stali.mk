@@ -42,7 +42,7 @@ OBJS = xstrtol.o\
 	error.o\
 	canonicalize-lgpl.o\
 	xalloc-die.o
-GEN = fcntl.h\
+DEPS = fcntl.h\
 	inttypes.h\
 	ref-add.sed\
 	langinfo.h\
@@ -65,12 +65,10 @@ GEN = fcntl.h\
 	c++defs.h\
 	unistd.h
 LIB = libputil.a
-CLEAN_FILES = $(GEN)
+CLEAN_FILES = $(DEPS)
 
 include $(ROOT)/mk/lib.mk
 
-deps: $(GEN)
-
-$(GEN):
+$(DEPS):
 	@echo GEN $@
 	@cp $@.stali $@

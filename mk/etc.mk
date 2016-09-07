@@ -1,14 +1,16 @@
 all: $(ETC)
 
-install: all preinst postinst
+install: postinst
+postinst: preinst
 
-preinst:
+preinst: all
 	@echo installing etc files to $(DESTDIR)/etc
 	@mkdir -p $(DESTDIR)/etc
 	@cp -f $(ETC) $(DESTDIR)/etc
 	@cd $(DESTDIR)/etc && chmod 644 $(ETC)
 
-uninstall: preuninst postuninst
+uninstall: postuninst
+postuninst: preuninst
 
 preuninst:
 	@echo removing etc files from $(DESTDIR)/etc

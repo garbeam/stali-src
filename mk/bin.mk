@@ -1,4 +1,8 @@
-all: options deps $(BINS) $(BIN)
+.SUFFIXES:
+
+.SUFFIXES: .o .c .cc
+
+all: options $(BIN)
 
 options:
 	@echo $(BIN) build options:
@@ -15,17 +19,20 @@ options:
 	@echo CXX $< 
 	@$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $< -o $@
 
-$(BIN): $(OBJS)
+$(OBJS): $(DEPS)
+
+$(BIN): $(OBJS) $(LIBS)
 	@echo LD $@
-	@$(CC) -o $@ $(OBJS) $(LDFLAGS)
+	@$(CC) -o $@ $^ $(LDFLAGS)
 
 clean:
 	@echo cleaning
-	@rm -f $(BINS) $(BIN) $(OBJS) $(CLEAN_FILES)
+	@rm -f $(BIN) $(OBJS) $(CLEAN_FILES)
 
-install: all preinst postinst
+install: postinst
+postinst: preinst
 
-preinst:
+preinst: all
 	@echo installing executable file to $(DESTDIR)$(PREFIX)/bin
 	@mkdir -p $(DESTDIR)$(PREFIX)/bin
 	@cp -f $(BIN) $(DESTDIR)$(PREFIX)/bin
@@ -43,7 +50,8 @@ preinst:
 		chmod 644 $(DESTDIR)$(MANPREFIX)/man8/$(BIN).8;\
 	fi
 
-uninstall: preuninst postuninst
+uninstall: postuninst
+postuninst: preuninst
 
 preuninst:
 	@echo removing executable file from $(DESTDIR)$(PREFIX)/bin
@@ -57,4 +65,4 @@ preuninst:
 		rm -f $(DESTDIR)$(MANPREFIX)/man8/$(BIN).8;\
 	fi
 
-.PHONY: deps options clean install preinst postinst uninstall preuninst postuninst
+.PHONY: options clean install preinst postinst uninstall preuninst postuninst

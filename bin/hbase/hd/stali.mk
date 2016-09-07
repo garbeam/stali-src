@@ -8,5 +8,3 @@ BIN = hd
 OBJS = hd.o
 
 include $(ROOT)/mk/bin.mk
-
-deps:

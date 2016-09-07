@@ -7,8 +7,6 @@ OBJS = install.o
 
 include $(ROOT)/mk/bin.mk
 
-deps:
-
 postinst:
 	@mv $(DESTDIR)$(PREFIX)/bin/$(BIN) $(DESTDIR)$(PREFIX)/bin/install
 	@mv $(DESTDIR)$(MANPREFIX)/man1/$(BIN).1 $(DESTDIR)$(MANPREFIX)/man1/install.1

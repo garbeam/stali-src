@@ -27,13 +27,13 @@ OBJS = \
   printf.o \
   osdep.o \
   intl-compat.o
-CLEAN_FILES = libgnuintl.h
+DEPS = libgnuintl.h
+CLEAN_FILES = $(DEPS)
 CPPFLAGS += -DLOCALE_ALIAS_PATH=\"$(PREFIX)share/locale\" -DLIBDIR=\"$(PREFIX)lib\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"$(PREFIX)lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H
 CFLAGS += -I. -I.. -I../lib
 
 include $(ROOT)/mk/lib.mk
 
-deps: libgnuintl.h
 
 libgnuintl.h: libgnuintl.h.in
 	@sed -e 's,@''HAVE_POSIX_PRINTF''@,1,g' \

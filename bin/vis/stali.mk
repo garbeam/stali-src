@@ -7,7 +7,8 @@ CFLAGS += -std=c99 -I$(ROOT)/lib/ncurses/include -I$(ROOT)/lib/libtermkey
 CPPFLAGS +=  -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -DNDEBUG -DVERSION=\"$(VERSION)\"
 BIN = vis
 CLEAN_FILES = config.h
-LDFLAGS += $(ROOT)/lib/ncurses/libncurses.a $(ROOT)/lib/libtermkey/libtermkey.a
+LIBS = $(ROOT)/lib/ncurses/libncurses.a $(ROOT)/lib/libtermkey/libtermkey.a
+DEPS = config.h
 OBJS = array.o\
 	buffer.o\
 	libutf.o\
@@ -33,8 +34,6 @@ OBJS = array.o\
 
 include $(ROOT)/mk/bin.mk
 
-deps: config.h
-
 config.h:
 	cp config.def.h config.h
 
@@ -45,9 +44,5 @@ postinst:
 	@chmod 755 $(DESTDIR)$(PREFIX)/bin/vis-clipboard
 
 postuninst:
-	@cd $(DESTDIR)$(PREFIX)/bin && rm vis-open
-	@cd $(DESTDIR)$(PREFIX)/bin && rm vis-clipboard
-
-
-
-
+	@cd $(DESTDIR)$(PREFIX)/bin && rm -f vis-open
+	@cd $(DESTDIR)$(PREFIX)/bin && rm -f vis-clipboard

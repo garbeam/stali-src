@@ -27,7 +27,7 @@ MAN8_INFILES = badblocks.8.in blkid.8.in dumpe2fs.8.in e2freefrag.8.in e2image.8
 	     e4defrag.8.in filefrag.8.in fsck.8.in logsave.8.in mke2fs.8.in mklost+found.8.in tune2fs.8.in uuidd.8.in
 MAN8_FILES = badblocks.8 blkid.8 dumpe2fs.8 e2freefrag.8 e2image.8 e2undo.8 e4crypt.8\
 	     e4defrag.8 filefrag.8 fsck.8 logsave.8 mke2fs.8 mklost+found.8 tune2fs.8 uuidd.8
-CLEAN_FILES = default_profile.c $(BINS)
+CLEAN_FILES = default_profile.c mke2fs.conf $(BINS)
 CPPFLAGS = -DHAVE_CONFIG_H
 CFLAGS = -I. -I../lib -I../intl 
 LDFLAGS += ../lib/libext2fs.a ../lib/libcom_err.a ../lib/libsupport.a ../lib/libblkid.a ../lib/libuuid.a\

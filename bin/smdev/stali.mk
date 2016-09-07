@@ -3,6 +3,7 @@ ROOT=../..
 include $(ROOT)/config.mk
 
 CFLAGS += -D_BSD_SOURCE -D_GNU_SOURCE
+DEPS = config.h
 OBJS = \
 	smdev.o             \
 	util/agetcwd.o      \
@@ -17,8 +18,6 @@ OBJS = \
 BIN = smdev
 
 include $(ROOT)/mk/bin.mk
-
-deps: config.h
 
 config.h:
 	@echo creating $@ from config.def.h

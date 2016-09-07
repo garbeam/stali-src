@@ -7,3 +7,5 @@ SUBDIRS = zlib\
 	expat
 
 include $(ROOT)/mk/dir.mk
+
+libtermkey: ncurses

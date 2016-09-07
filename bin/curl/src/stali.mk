@@ -50,7 +50,7 @@ OBJS = tool_xattr.o\
 CLEAN_FILES =  tool_hugehelp.c
 CPPFLAGS += -DHAVE_CONFIG_H -DHAVE_FSETXATTR
 CFLAGS = -I../lib -I../include -I$(ROOT)/lib/zlib
-LDFLAGS += ../lib/libcurl.a $(ROOT)/lib/zlib/libz.a $(ROOT)/lib/libressl/ssl/libssl.a $(ROOT)/lib/libressl/crypto/libcrypto.a
+LIBS = ../lib/libcurl.a $(ROOT)/lib/zlib/libz.a $(ROOT)/lib/libressl/ssl/libssl.a $(ROOT)/lib/libressl/crypto/libcrypto.a
 
 include $(ROOT)/mk/bin.mk
 

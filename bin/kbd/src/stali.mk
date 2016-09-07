@@ -44,7 +44,7 @@ SRC = $(BIN:=.c)
 
 all: $(BIN)
 
-$(BIN): $(LIB) $(OBJ)
+$(BIN): $(LIB) $(OBJ) libkeymap/libkeymap.a
 	@echo LD $@
 	@$(LD) $(LDFLAGS) -o $@ $@.o $(LIB) libkeymap/libkeymap.a
 

@@ -1,7 +1,9 @@
 ROOT=../..
 
 SUBDIRS = libarchive\
-	  cpio
-# tar
+	  cpio\
+	  tar
 
 include $(ROOT)/mk/dir.mk
+
+cpio tar: libarchive

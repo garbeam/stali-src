@@ -12,4 +12,3 @@ CLEAN_FILES =
 CFLAGS += -I../
 
 include $(ROOT)/mk/lib.mk
-

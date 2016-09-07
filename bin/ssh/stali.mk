@@ -484,7 +484,9 @@ BIN = ssh-key ssh
 OBJ = $(LIBTOMMATHOBJ) $(LIBTOMCRYPTOBJ) $(COMMONOBJS) $(KEYOBJS) $(CLIOBJS) $(CLISVROBJS) 
 MAN = ssh.1 ssh-key.1
 
-all: $(LIB) $(BIN)
+all: $(BIN)
+
+$(BIN): $(LIB)
 
 libtomcrypt/src/ciphers/aes/aes_enc.o: libtomcrypt/src/ciphers/aes/aes.c libtomcrypt/src/ciphers/aes/aes_tab.c
 	$(CC) $(CFLAGS) -DENCRYPT_ONLY -c $< -o libtomcrypt/src/ciphers/aes/aes_enc.o
@@ -497,13 +499,13 @@ $(LIBTOMCRYPT): $(LIBTOMCRYPTOBJ)
 	$(AR) rc $@ $?
 	$(RANLIB) $@
 
-ssh-key: $(COMMONOBJS) $(KEYOBJS)
+ssh-key: $(COMMONOBJS) $(KEYOBJS) $(LIB)
 	@echo LD $@
-	@$(LD) $(LDFLAGS) -o $@ $(COMMONOBJS) $(KEYOBJS) $(LIB)
+	@$(LD) $(LDFLAGS) -o $@ $^
 
-ssh: $(COMMONOBJS) $(CLISVROBJS) $(CLIOBJS)
+ssh: $(COMMONOBJS) $(CLISVROBJS) $(CLIOBJS) $(LIB)
 	@echo LD $@
-	@$(LD) -o $@ $(COMMONOBJS) $(CLISVROBJS) $(CLIOBJS) $(LIB) $(LDFLAGS)
+	@$(LD) -o $@ $^ $(LDFLAGS)
 
 .c.o:
 	@echo CC $<

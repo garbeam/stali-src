@@ -8,5 +8,3 @@ BIN = fmt
 OBJS = fmt.o
 
 include $(ROOT)/mk/bin.mk
-
-deps:

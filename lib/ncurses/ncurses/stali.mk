@@ -161,47 +161,15 @@ OBJS = tty/hardscroll.o \
 	base/version.o
 
 LIB = ../libncurses.a
-CLEAN_FILES = *.c init_keytry.h ../include/ncurses_def.h ../include/curses.h ../include/term.h ../include/hashsize.h
+DEPS = init_keytry.h ../include/ncurses_def.h ../include/curses.h ../include/term.h ../include/hashsize.h
+CLEAN_FILES = *.c $(DEPS)
 
 include $(ROOT)/mk/lib.mk
 
-deps: init_keytry.h ../include/ncurses_def.h ../include/curses.h ../include/term.h ../include/hashsize.h
+.SUFFIXES: .stali .h
 
-init_keytry.h:
-	@cp init_keytry.stali init_keytry.h
+.stali.c:
+	@cp $< $@
 
-../include/ncurses_def.h:
-	@cp ../include/ncurses_def.stali ../include/ncurses_def.h
-
-../include/curses.h:
-	@cp ../include/curses.stali ../include/curses.h
-
-../include/term.h:
-	@cp ../include/term.stali ../include/term.h
-
-../include/hashsize.h:
-	@cp ../include/hashsize.stali ../include/hashsize.h
-
-lib_gen.c:
-	@cp lib_gen.stali lib_gen.c
-
-expanded.c:
-	@cp expanded.stali expanded.c
-
-codes.c:
-	@cp codes.stali codes.c
-
-comp_captab.c:
-	@cp comp_captab.stali comp_captab.c
-
-fallback.c:
-	@cp fallback.stali fallback.c
-
-lib_keyname.c:
-	@cp lib_keyname.stali lib_keyname.c
-
-names.c:
-	@cp names.stali names.c
-
-unctrl.c:
-	@cp unctrl.stali unctrl.c
+.stali.h:
+	@cp $< $@

@@ -6,12 +6,11 @@ CPPFLAGS += -DDIFFH=\"$(PREFIX)/bin/diffh\"
 CFLAGS += -I../libcommon
 LDFLAGS += -L../libcommon -lcommon
 BIN = diff
+DEPS = diffh
 OBJS = diff.o diffdir.o diffreg.o diffver.o
-CLEAN_FILES = diffh diff.o
+CLEAN_FILES = diffh diffh.o
 
 include $(ROOT)/mk/bin.mk
-
-deps: diffh
 
 diffh: diffh.o
 	@echo LD $@

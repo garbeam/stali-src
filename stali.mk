@@ -9,6 +9,6 @@ SUBDIRS = etc\
 	bin\
 	$(SYS)
 
-world: all
-
 include $(ROOT)/mk/dir.mk
+
+bin: lib

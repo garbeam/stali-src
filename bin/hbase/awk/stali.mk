@@ -4,20 +4,20 @@ include $(ROOT)/config.mk
 
 BIN = awk
 OBJS = ytab.o lex.o b.o main.o parse.o proctab.o tran.o lib.o run.o
-CLEAN_FILES = ytab.c ytab.h proctab.c gen/maketab
+DEPS = ytab.h
+CLEAN_FILES = _ytab ytab.c ytab.h proctab.c gen/maketab
 LDFLAGS += -lm
 
 include $(ROOT)/mk/bin.mk
 
-deps: ytab.c proctab.c
+ytab.h ytab.c: _ytab ;
 
-ytab.c: ytab
-
-ytab: awkgram.y
-	@echo YACC -d awkgram.y
-	@$(YACC) -d awkgram.y
-	mv y.tab.c ytab.c
+_ytab: awkgram.y
+	@echo YACC -d $?
+	@$(YACC) -d $?
 	mv y.tab.h ytab.h
+	mv y.tab.c ytab.c
+	touch $@
 
 proctab.c: gen/maketab
 	@echo MAKETAB proctab.c

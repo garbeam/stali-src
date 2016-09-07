@@ -16,7 +16,7 @@ OBJS = ip.o ipaddress.o ipaddrlabel.o iproute.o iprule.o ipnetns.o \
 CLEAN_FILES =  
 CPPFLAGS += -D_GNU_SOURCE -DHAVE_SETNS -D_LINUX_IN6_H
 CFLAGS += -I../include
-LDFLAGS += ../lib/libiproute2.a
+LIBS = ../lib/libiproute2.a
 
 include $(ROOT)/mk/bin.mk
 

@@ -9,5 +9,3 @@ BIN = stty
 OBJS = stty.o
 
 include $(ROOT)/mk/bin.mk
-
-deps:

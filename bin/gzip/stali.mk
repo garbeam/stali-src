@@ -4,12 +4,10 @@ include $(ROOT)/config.mk
 
 CFLAGS += -I. -Ilib
 CPPFLAGS +=
-LIBGZIP = lib/libgzip.a
-LIB = $(LIBGZIP)
-
+LIB = lib/libgzip.a
 BIN = gzip
 # gunzip zcat zcmp zdiff zegrep zforce zgrep zless zmore znew
-OBJ = bits.o\
+OBJS = bits.o\
 	deflate.o\
 	gzip.o\
 	inflate.o\
@@ -23,40 +21,20 @@ OBJ = bits.o\
 	version.o\
 	zip.o
 
-GZIP_OBJS = bits.o\
-	deflate.o\
-	gzip.o\
-	inflate.o\
-	lzw.o\
-	trees.o\
-	unlzh.o\
-	unlzw.o\
-	unpack.o\
-	unzip.o\
-	util.o\
-	zip.o\
-	version.o
+all: $(BIN)
 
-all: $(LIB) $(OBJ) $(BIN)
+$(OBJS): $(LIB)
 
-$(LIBGZIP):
-	@cd lib; $(MAKE) -f stali.mk;
+$(LIB):
+	@cd lib && $(MAKE) -f stali.mk
 
-gzip: $(LIB) $(OBJ)
+$(BIN): $(OBJS) $(LIB)
 	@echo LD $@
-	@$(LD) $(LDFLAGS) -o $@ $(GZIP_OBJS) $(LIB) lib/libgzip.a
+	@$(LD) $(LDFLAGS) -o $@ $^
 
 .c.o:
 	@echo CC $<
 	@$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ -c $<
-
-$(LIBCOMMON): $(LIBCOMMONOBJ)
-	@$(AR) rc $@ $?
-	@$(RANLIB) $@
-
-$(LIBFONT): $(LIBFONTOBJ)
-	@$(AR) rc $@ $?
-	@$(RANLIB) $@
 
 install: all
 	@mkdir -p $(DESTDIR)$(PREFIX)/bin
@@ -72,8 +50,8 @@ uninstall:
 	@cd $(DESTDIR)$(MANPREFIX)/man1 && rm -f $(BIN).1
 
 clean:
-	rm -f $(BIN) $(OBJ) $(LIB)
-	@cd lib; $(MAKE) -f stali.mk clean;
+	rm -f $(BIN) $(OBJS) $(LIB)
+	@cd lib && $(MAKE) -f stali.mk clean;
 
 .PHONY:
 	all install uninstall clean

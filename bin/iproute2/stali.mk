@@ -4,3 +4,5 @@ SUBDIRS = lib\
 	ip
 
 include $(ROOT)/mk/dir.mk
+
+ip: lib

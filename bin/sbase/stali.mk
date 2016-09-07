@@ -210,8 +210,11 @@ $(LIBUTIL): $(LIBUTILOBJ)
 
 getconf.c: confstr_l.h limits_l.h sysconf_l.h pathconf_l.h
 
-confstr_l.h limits_l.h sysconf_l.h pathconf_l.h: getconf.sh
+confstr_l.h limits_l.h sysconf_l.h pathconf_l.h: _getconf ;
+	
+_getconf: getconf.sh
 	./getconf.sh
+	touch $@
 
 install: all
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
@@ -229,7 +232,7 @@ uninstall:
 
 clean:
 	rm -f $(BIN) $(OBJ) $(LIB) sbase-box sbase-$(VERSION).tar.gz
-	rm -f confstr_l.h limits_l.h sysconf_l.h pathconf_l.h
+	rm -f confstr_l.h limits_l.h sysconf_l.h pathconf_l.h _getconf
 
 .PHONY:
 	all install uninstall clean

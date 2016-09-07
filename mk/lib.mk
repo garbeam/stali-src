@@ -1,4 +1,8 @@
-all: options deps $(LIBS) $(LIB)
+.SUFFIXES:
+
+.SUFFIXES: .o .c .cc
+
+all: options $(LIB)
 
 options:
 	@echo $(LIB) build options:
@@ -14,6 +18,8 @@ options:
 	@echo CXX $< 
 	@$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $< -o $@
 
+$(OBJS): $(DEPS)
+
 $(LIB): $(OBJS)
 	@echo AR $@
 	@$(AR) cr $@ $(OBJS)
@@ -23,9 +29,10 @@ clean:
 	@echo cleaning
 	@rm -f $(LIB) $(OBJS) $(CLEAN_FILES)
 
-install: all preinst postinst
+install: postinst
+postinst: preinst
 
-preinst:
+preinst: all
 #	@if test "$(LIB_INST)" != ""; then\
 #		echo installing library file to $(DESTDIR)$(PREFIX)/lib ;\
 #		mkdir -p $(DESTDIR)$(PREFIX)/lib ;\
@@ -33,7 +40,8 @@ preinst:
 #	fi
 
 
-uninstall: preuninst postuninst
+uninstall: postuninst
+postuninst: preuninst
 
 preuninst:
 #	@if test "$(LIB_INST)" != ""; then\
@@ -41,4 +49,4 @@ preuninst:
 #		rm -f $(DESTDIR)$(PREFIX)/lib/$(LIB_INST); \
 #	fi
 
-.PHONY: deps options clean install preinst postinst uninstall preuninst postuninst
+.PHONY: options clean install preinst postinst uninstall preuninst postuninst

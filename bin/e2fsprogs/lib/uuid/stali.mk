@@ -14,12 +14,11 @@ OBJS=		clear.o \
 		unpack.o \
 		unparse.o \
 		uuid_time.o
-CLEAN_FILES = uuid.h 
+DEPS = uuid.h
+CLEAN_FILES = $(DEPS)
 CFLAGS += -I../
 
 include $(ROOT)/mk/lib.mk
-
-deps: uuid.h
 
 uuid.h: uuid.h.in
 	@cp uuid.h.in uuid.h

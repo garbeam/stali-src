@@ -2,20 +2,17 @@ ROOT=../../..
 
 include $(ROOT)/config.mk
 
-CFLAGS += -I../libcommon -I../libuxre -DUXRE -DDC=\"$(PREFIX)/bin/dc\" -DLIBB=\"$(PREFIX)/bin/bc-lib.b\"
-LDFLAGS += -L../libcommon -lcommon -L../libuxre -luxre
+CFLAGS += -DDC=\"$(PREFIX)/bin/dc\" -DLIBB=\"$(PREFIX)/bin/bc-lib.b\"
 BIN = bc
 OBJS = bc.o
-CLEAN_FILES = bc.c y.tab.c y.tab.h
+CLEAN_FILES = bc.c
 
 include $(ROOT)/mk/bin.mk
 
-deps:
-
 bc.c: bc.y
-	@echo YACC -d bc.y
-	@$(YACC) -d bc.y
-	@sed -f yyval.sed <y.tab.c >$@
+	@echo YACC bc.y
+	@$(YACC) bc.y
+	@sed -f yyval.sed y.tab.c >$@
 	@rm y.tab.c
 
 postinst:

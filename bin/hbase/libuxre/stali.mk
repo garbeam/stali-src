@@ -8,8 +8,6 @@ CFLAGS += -I.
 
 include $(ROOT)/mk/lib.mk
 
-deps:
-
 _collelem.o: colldata.h re.h regex.h wcharm.h
 _collmult.o: colldata.h re.h regex.h wcharm.h
 bracket.o: colldata.h re.h regex.h wcharm.h

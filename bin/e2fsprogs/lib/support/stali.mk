@@ -13,12 +13,14 @@ OBJS=		mkquota.o \
 		quotaio_v2.o \
 		quotaio_tree.o \
 		dict.o
-CLEAN_FILES = prof_err.c prof_err.h
+DEPS = prof_err.c prof_err.h
+CLEAN_FILES = $(DEPS) _prof_err
 CFLAGS += -I../
 
 include $(ROOT)/mk/lib.mk
 
-deps: prof_err.c prof_err.h
+prof_err.c prof_err.h: _prof_err ;
 
-prof_err.c prof_err.h: prof_err.et
+_prof_err: prof_err.et
 	@DIR=../et ../et/compile_et prof_err.et
+	@touch $@

@@ -15,4 +15,3 @@ install: all
 
 uninstall:
 	@cd $(DESTDIR)$(PREFIX)/etc && rm -f $(BIN)
-

@@ -2,20 +2,21 @@ ROOT=../../..
 
 include $(ROOT)/config.mk
 
-CFLAGS = $(HOSTCFLAGS)
 BINS = subst symlinks
-CLEAN_FILES = *.o $(BINS) dirpaths.h
+OBJS = $(BINS:=.o)
+DEPS = dirpaths.h subst.conf
+CLEAN_FILES = $(DEPS) $(BINS)
 
-all: options deps $(BINS)
+all: options $(BINS)
+$(BINS): $(OBJS)
+$(OBJS): $(DEPS)
 
 options:
 	@echo build options:
-	@echo "CFLAGS   = $(CFLAGS)"
-	@echo "CPPFLAGS = $(CPPFLAGS)"
-	@echo "LDFLAGS  = $(LDFLAGS)"
-	@echo "CC       = $(CC)"
-
-deps: dirpaths.h subst.conf
+	@echo "HOSTCFLAGS   = $(HOSTCFLAGS)"
+	@echo "HOSTCPPFLAGS = $(HOSTCPPFLAGS)"
+	@echo "HOSTLDFLAGS  = $(HOSTLDFLAGS)"
+	@echo "HOSTCC       = $(HOSTCC)"
 
 dirpaths.h:
 	@echo "/* fake dirpaths.h for config.h */" > dirpaths.h
@@ -24,16 +25,12 @@ subst.conf:
 	@cp subst.conf.stali subst.conf
 
 .c.o:
-	@echo CC $< 
-	@$(HOSTCC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
+	@echo HOSTCC $< 
+	@$(HOSTCC) $(HOSTCFLAGS) $(HOSTCPPFLAGS) -c $< -o $@
 
-subst: subst.o
-	@echo LD $@
-	@$(HOSTCC) -o $@ subst.o $(LDFLAGS)
-
-symlinks: symlinks.o
-	@echo LD $@
-	@$(HOSTCC) -o $@ symlinks.o $(LDFLAGS)
+.o:
+	@echo HOSTLD $<
+	@$(HOSTCC) -o $@ $< $(HOSTLDFLAGS) 
 
 install:
 

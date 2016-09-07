@@ -63,7 +63,7 @@ OBJS = stripslash.o\
 	fflush.o\
 	fseek.o\
 	xalloc-die.o
-GEN = alloca.h\
+DEPS = alloca.h\
 	configmake.h\
 	c++defs.h\
 	arg-nonnull.h\
@@ -83,12 +83,10 @@ GEN = alloca.h\
 	wchar.h\
 	wctype.h
 
-CLEAN_FILES = $(GEN)
+CLEAN_FILES = $(DEPS)
 
 include $(ROOT)/mk/lib.mk
 
-deps: $(GEN)
-
-$(GEN):
+$(DEPS):
 	@echo GEN $@
 	@cp $@.stali $@

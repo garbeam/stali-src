@@ -23,3 +23,5 @@ SUBDIRS = hbase\
 	parted
 
 include $(ROOT)/mk/dir.mk
+
+parted: e2fsprogs

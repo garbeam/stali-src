@@ -1,8 +1,8 @@
 ROOT=../..
 
+# NOTE: was nothing using libuxre?
 SUBDIRS =\
 	libcommon\
-	libuxre\
 	yacc\
 	_install\
 	stty\
@@ -11,9 +11,12 @@ SUBDIRS =\
 	hd\
 	bc\
 	pgrep\
+	diff\
 	lex
-#patch\
-#diff\
-#dc\
 
 include $(ROOT)/mk/dir.mk
+
+awk bc lex: yacc
+
+dc diff fmt hd pgrep stty: libcommon
+

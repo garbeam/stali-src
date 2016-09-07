@@ -27,6 +27,7 @@ THIS SOFTWARE.
 #include <stdio.h>
 #include <string.h>
 #include "awk.h"
+#include <unistd.h>
 
 void checkdup(Node *list, Cell *item);
 int yywrap(void) { return(1); }

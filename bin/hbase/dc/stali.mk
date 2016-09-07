@@ -9,5 +9,3 @@ BIN = dc
 OBJS = dc.o
 
 include $(ROOT)/mk/bin.mk
-
-deps:

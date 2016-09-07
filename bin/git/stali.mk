@@ -335,9 +335,12 @@ SCRIPTS_SH = git-bisect.sh\
 	git-submodule.sh\
 	git-web--browse.sh
 
+DEPS = $(SCRIPTS_SH) common-cmds.h
 CLEAN_FILES = common-cmds.h
 
-all: options deps $(BIN)
+all: options $(BIN)
+
+$(OBJS): $(DEPS)
 
 options:
 	@echo $(BIN) build options:
@@ -349,8 +352,6 @@ options:
 .c.o:
 	@echo CC $< 
 	@$(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
-
-deps: $(SCRIPTS_SH) common-cmds.h
 
 common-cmds.h: generate-cmdlist.sh command-list.txt
 
@@ -425,4 +426,4 @@ uninstall:
 	@cd $(DESTDIR)$(PREFIX)/bin && rm -f git-remote-https git-remote-ftp git-remote-ftps
 	@rm -rf $(DESTDIR)$(PREFIX)/share/git-core
 
-.PHONY: deps options clean install uninstall
+.PHONY: options clean install uninstall

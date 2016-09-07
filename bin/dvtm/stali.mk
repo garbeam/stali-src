@@ -7,12 +7,11 @@ CFLAGS += -I. -I$(ROOT)/lib/ncurses/include -std=c99 -Wall -DVERSION=\"${VERSION
 CPPFLAGS += -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700
 OBJS = dvtm.o vt.o
 BIN = dvtm
-LDFLAGS += $(ROOT)/lib/ncurses/libncurses.a
-CLEAN_FILES = config.h
+LIBS = $(ROOT)/lib/ncurses/libncurses.a
+DEPS = config.h
+CLEAN_FILES = $(DEPS)
 
 include $(ROOT)/mk/bin.mk
-
-deps: config.h
 
 config.h:
 	cp config.def.h config.h

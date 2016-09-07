@@ -5,3 +5,5 @@ SUBDIRS = lib\
 	parted
 
 include $(ROOT)/mk/dir.mk
+
+parted: lib libparted

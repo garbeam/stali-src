@@ -13,4 +13,3 @@ ETC = fstab.def\
 include $(ROOT)/mk/etc.mk
 
 clean:
-
