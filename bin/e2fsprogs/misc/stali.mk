@@ -120,7 +120,7 @@ clean:
 	@echo cleaning
 	@rm -f $(BIN) $(OBJS) $(CLEAN_FILES) $(MAN8_FILES)
 
-install:
+install: all
 	@echo installing executable file to $(DESTDIR)$(PREFIX)/bin
 	@mkdir -p $(DESTDIR)$(PREFIX)/bin
 	@cp -f $(BINS) $(DESTDIR)$(PREFIX)/bin

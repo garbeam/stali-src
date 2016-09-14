@@ -32,7 +32,7 @@ subst.conf:
 	@echo HOSTLD $<
 	@$(HOSTCC) -o $@ $< $(HOSTLDFLAGS) 
 
-install:
+install: all
 
 uninstall:
 
