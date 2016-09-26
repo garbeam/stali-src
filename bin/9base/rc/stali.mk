@@ -10,7 +10,7 @@ OBJS = code.o exec.o getflags.o glob.o here.o io.o lex.o \
        pcmd.o pfnc.o simple.o subr.o trap.o tree.o unixcrap.o \
        var.o y.tab.o plan9ish.o havefork.o
 DEPS = x.tab.h
-CLEANFILES = y.tab.c x.tab.h _ytab
+CLEAN_FILES = y.tab.c x.tab.h _ytab
 
 include $(ROOT)/mk/bin.mk
 
