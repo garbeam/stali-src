@@ -4,12 +4,15 @@ VERSION = 0.0
 # define target and target rootfs
 HOST_ARCH = x86_64-linux-musl
 
+# OBJTYPE used for 9base getcallerpc_*, there must be a better way...
 TARGET_ARCH = $(HOST_ARCH)
+OBJTYPE     = x86_64
 TARGET_LONG = 8
 SYS         = sys.x86_64
 DESTDIR     = $(HOME)/rootfs-x86_64
 
 #TARGET_ARCH = arm-linux-musleabi
+#OBJTYPE     = arm
 #TARGET_LONG = 4
 #SYS         = sys.pi
 #DESTDIR     = $(HOME)/rootfs-pi
